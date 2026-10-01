@@ -1,0 +1,3682 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>APEX PERFORMANCE | Unleash Your Absolute Limit | Dark Athletic Luxury Gym</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="APEX PERFORMANCE is an elite fitness club and athletic luxury facility featuring 24/7 biometric access, Olympic lifting platforms, HIIT MetCon, combat training, and contrast therapy recovery suites.">
+  <meta name="keywords" content="gym, fitness club, athletic training, Olympic weightlifting, HIIT, boxing, contrast therapy, ice bath, sauna, personal training, macro calculator">
+  <meta name="theme-color" content="#090a0d">
+
+  <!-- OpenGraph -->
+  <meta property="og:title" content="APEX PERFORMANCE | Dark Athletic Luxury Gym">
+  <meta property="og:description" content="Unleash your absolute limit with world-class Olympic coaches, cutting-edge recovery suites, and high-intensity combat conditioning.">
+  <meta property="og:type" content="website">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            volt: '#ccff00',
+            'volt-dark': '#a3cc00',
+            flame: '#ff4d00',
+            charcoal: '#090a0d',
+            'surface-dark': '#12151b',
+            'surface-elevated': '#1a1e27',
+            'border-subtle': '#232936',
+          },
+          fontFamily: {
+            display: ['Bebas Neue', 'sans-serif'],
+            accent: ['Syne', 'sans-serif'],
+            sans: ['Plus Jakarta Sans', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Google Fonts & Custom CSS -->
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Syne:wght@700;800&display=swap');
+
+:root {
+  --bg-primary: #090a0d;
+  --bg-card: #12151b;
+  --bg-card-hover: #191d26;
+  --bg-elevated: #1e232e;
+  --border-subtle: #232936;
+  --border-highlight: #333c4d;
+  
+  --volt: #ccff00;
+  --volt-glow: rgba(204, 255, 0, 0.35);
+  --volt-glow-strong: rgba(204, 255, 0, 0.7);
+  --volt-dark: #a3cc00;
+  
+  --flame: #ff4d00;
+  --flame-glow: rgba(255, 77, 0, 0.4);
+  
+  --text-primary: #f8fafc;
+  --text-secondary: #94a3b8;
+  --text-muted: #64748b;
+  
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-full: 9999px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+  position: relative;
+  min-height: 100vh;
+  background: radial-gradient(circle at 50% 0%, #171c26 0%, #090a0d 65%);
+  padding-bottom: 110px; /* generous clearance for mobile bottom nav and dual floating action buttons */
+}
+
+@media (min-width: 1024px) {
+  body {
+    padding-bottom: 0;
+  }
+}
+
+/* Typography Helpers */
+.font-display {
+  font-family: 'Bebas Neue', cursive, sans-serif;
+  letter-spacing: 0.04em;
+}
+
+.font-accent {
+  font-family: 'Syne', sans-serif;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #090a0d;
+}
+::-webkit-scrollbar-thumb {
+  background: #232936;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--volt);
+}
+
+/* Volt Glow Effects */
+.volt-glow {
+  box-shadow: 0 0 25px var(--volt-glow);
+}
+.volt-glow-lg {
+  box-shadow: 0 0 45px var(--volt-glow);
+}
+.volt-glow-inset {
+  box-shadow: inset 0 0 20px var(--volt-glow);
+}
+.flame-glow {
+  box-shadow: 0 0 25px var(--flame-glow);
+}
+
+.text-stroke-volt {
+  -webkit-text-stroke: 1px var(--volt);
+  color: transparent;
+}
+
+/* Glowing Border for Elite Plan */
+.neon-border-animated {
+  position: relative;
+  background: linear-gradient(var(--bg-card), var(--bg-card)) padding-box,
+              linear-gradient(135deg, #ccff00, #ff4d00, #ccff00) border-box;
+  border: 2px solid transparent;
+  animation: borderRotate 4s ease infinite;
+}
+
+@keyframes borderRotate {
+  0% {
+    filter: drop-shadow(0 0 12px rgba(204, 255, 0, 0.4));
+  }
+  50% {
+    filter: drop-shadow(0 0 22px rgba(255, 77, 0, 0.5));
+  }
+  100% {
+    filter: drop-shadow(0 0 12px rgba(204, 255, 0, 0.4));
+  }
+}
+
+/* Glassmorphism */
+.glass-panel {
+  background: rgba(18, 21, 27, 0.78);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-nav {
+  background: rgba(9, 10, 13, 0.88);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+/* Horizontal Snap Carousel for Mobile */
+.snap-carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  gap: 1rem;
+  padding-bottom: 1rem;
+}
+.snap-carousel::-webkit-scrollbar {
+  display: none;
+}
+.snap-item {
+  scroll-snap-align: start;
+  flex-shrink: 0;
+}
+
+/* Input Range Styling (Sliders) */
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 8px;
+  background: #232936;
+  border-radius: 4px;
+  outline: none;
+  transition: all 0.2s ease;
+}
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--volt);
+  cursor: pointer;
+  box-shadow: 0 0 12px var(--volt-glow-strong);
+  border: 2px solid #090a0d;
+  transition: transform 0.15s ease, background 0.15s;
+}
+input[type="range"]::-webkit-slider-thumb:hover {
+  transform: scale(1.2);
+}
+input[type="range"]::-moz-range-thumb {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--volt);
+  cursor: pointer;
+  box-shadow: 0 0 12px var(--volt-glow-strong);
+  border: 2px solid #090a0d;
+}
+
+/* Badge Pulse */
+@keyframes pulseGlow {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.6;
+    transform: scale(1.08);
+  }
+}
+.badge-pulse {
+  animation: pulseGlow 2s infinite ease-in-out;
+}
+
+/* Hero Gradient Overlay */
+.hero-vignette {
+  background: linear-gradient(
+    180deg,
+    rgba(9, 10, 13, 0.4) 0%,
+    rgba(9, 10, 13, 0.75) 60%,
+    rgba(9, 10, 13, 1) 100%
+  );
+}
+
+/* Floating Action Buttons */
+.mobile-sticky-pass {
+  position: fixed;
+  bottom: 76px;
+  right: 14px;
+  z-index: 45;
+  filter: drop-shadow(0 6px 16px rgba(0, 0, 0, 0.7));
+}
+
+@media (min-width: 1024px) {
+  .mobile-sticky-pass {
+    display: none;
+  }
+}
+
+/* Floating WhatsApp Chat Button */
+.whatsapp-float {
+  position: fixed;
+  bottom: 76px;
+  left: 14px;
+  z-index: 45;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #25D366;
+  color: #ffffff;
+  border-radius: 9999px;
+  box-shadow: 0 8px 24px rgba(37, 211, 102, 0.45);
+  transition: all 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
+  text-decoration: none;
+}
+
+.whatsapp-float:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 12px 30px rgba(37, 211, 102, 0.65);
+}
+
+@media (min-width: 1024px) {
+  .whatsapp-float {
+    bottom: 28px;
+    right: 28px;
+    left: auto;
+  }
+}
+
+.whatsapp-pulse {
+  animation: waPulse 2.2s infinite;
+}
+
+@keyframes waPulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 14px rgba(37, 211, 102, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+  }
+}
+
+/* Instagram Gradient */
+.insta-gradient {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+.insta-text-gradient {
+  background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Google Map Frame Dark Accent */
+.map-container {
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: 0 16px 36px -10px rgba(0, 0, 0, 0.8);
+}
+
+/* Modal Transitions */
+.modal-backdrop {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease-out;
+}
+.modal-backdrop.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+.modal-content-panel {
+  transform: scale(0.95) translateY(12px);
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.modal-backdrop.active .modal-content-panel {
+  transform: scale(1) translateY(0);
+}
+
+/* Interactive Card Hover Effects */
+.interactive-card {
+  transition: transform 0.25s cubic-bezier(0.2, 0.8, 0.2, 1), border-color 0.25s, box-shadow 0.25s;
+}
+.interactive-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(204, 255, 0, 0.4);
+  box-shadow: 0 12px 30px -10px rgba(0, 0, 0, 0.8), 0 0 20px -5px rgba(204, 255, 0, 0.2);
+}
+
+/* Live Capacity Gauge Bar */
+.capacity-fill {
+  transition: width 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Macro Bar Transitions */
+.macro-bar-fill {
+  transition: width 0.4s ease-out;
+}
+
+/* Button ripple / touch feedback */
+.touch-btn {
+  min-height: 44px;
+  min-width: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.15s ease;
+}
+.touch-btn:active {
+  transform: scale(0.97);
+}
+
+</style>
+</head>
+<body class="bg-[#090a0d] text-white font-sans antialiased selection:bg-[#ccff00] selection:text-black">
+
+  <!-- TOP LIVE ANNOUNCEMENT TICKER -->
+  <div class="bg-[#12151b] border-b border-[#232936] text-[11px] py-1.5 px-3 sm:px-4 text-gray-300">
+    <div class="max-w-7xl mx-auto flex items-center justify-between gap-3">
+      <div class="flex items-center gap-2.5 overflow-hidden whitespace-nowrap">
+        <span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-[#ccff00]/10 text-[#ccff00] font-bold text-[10px] uppercase tracking-wider">
+          <span class="w-1.5 h-1.5 rounded-full bg-[#ccff00] animate-ping"></span>
+          24/7 Access
+        </span>
+        <span class="hidden md:inline text-gray-400">Indiranagar Flagship, Bengaluru • Contrast Therapy & Ice Baths Open</span>
+        
+        <!-- Instagram Link in Ticker -->
+        <a 
+          href="https://instagram.com/apexperformance.in" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          class="hidden sm:inline-flex items-center gap-1 text-gray-300 hover:text-white px-2 py-0.5 rounded-md bg-[#1a1f2b] hover:bg-[#252c3c] border border-[#2d3648] transition-colors"
+        >
+          <svg class="w-3 h-3 text-[#E1306C]" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+          </svg>
+          <span class="text-[10px] font-bold">@apexperformance.in</span>
+        </a>
+      </div>
+
+      <!-- Live Capacity Bar & WhatsApp Quick Help in Top Header -->
+      <div class="flex items-center gap-3 shrink-0">
+        <a 
+          href="https://wa.me/919876543210?text=Hi%20APEX%20Performance!%20I'm%20inquiring%20about%20gym%20memberships%20and%20coaching." 
+          target="_blank" 
+          rel="noopener noreferrer"
+          class="hidden sm:inline-flex items-center gap-1.5 text-xs text-[#25D366] hover:text-[#45e680] font-semibold transition-colors"
+        >
+          <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24">
+            <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.694.062-2.127-.532-1.782-.74-2.91-2.544-2.999-2.663-.088-.119-.714-.951-.714-1.815 0-.864.453-1.289.614-1.464.161-.176.353-.22.47-.22.12 0 .237.002.341.007.11.006.257-.042.403.31.15.358.513 1.25.558 1.34.045.09.076.196.015.316-.06.12-.09.195-.181.301-.09.106-.188.236-.269.317-.09.09-.184.188-.079.369.106.18.471.776 1.011 1.257.697.621 1.285.814 1.465.904.18.091.286.076.392-.046.106-.12.451-.527.572-.708.12-.18.241-.15.405-.09.166.06 1.054.497 1.235.588.181.09.301.135.346.211.045.075.045.437-.099.842z"/>
+          </svg>
+          <span>WhatsApp Help</span>
+        </a>
+
+        <div class="flex items-center gap-2 text-xs">
+          <span class="text-gray-400 hidden xs:inline">Floor Occupancy:</span>
+          <span id="live-capacity-pct" class="font-bold text-[#ccff00]">48%</span>
+        </div>
+        <div class="w-14 sm:w-16 h-1.5 bg-gray-800 rounded-full overflow-hidden">
+          <div id="live-capacity-bar" class="capacity-fill h-full bg-[#ccff00]" style="width: 48%;"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MAIN NAVIGATION (Sticky Glassmorphic) -->
+  <header class="sticky top-0 z-40 glass-nav transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Brand Logo -->
+      <a href="#hero" class="flex items-center gap-3 group">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-[#ccff00] to-[#99cc00] flex items-center justify-center text-black font-extrabold text-xl shadow-lg shadow-[#ccff00]/20 group-hover:scale-105 transition-transform">
+          <svg class="w-6 h-6 text-black fill-current" viewBox="0 0 24 24">
+            <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+          </svg>
+        </div>
+        <div>
+          <span class="font-display text-2xl sm:text-3xl tracking-wider text-white flex items-center gap-1">
+            APEX <span class="text-[#ccff00]">PERFORMANCE</span>
+          </span>
+          <span class="block text-[9px] font-bold tracking-[0.25em] text-gray-400 uppercase -mt-1">
+            Athletic Club & Recovery • India
+          </span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="hidden lg:flex items-center gap-7 text-sm font-semibold text-gray-300">
+        <a href="#classes" class="hover:text-[#ccff00] transition-colors py-1">Classes</a>
+        <a href="#trainers" class="hover:text-[#ccff00] transition-colors py-1">Coaches</a>
+        <a href="#calculator" class="hover:text-[#ccff00] transition-colors py-1">Macro Calc</a>
+        <a href="#amenities" class="hover:text-[#ccff00] transition-colors py-1">Recovery</a>
+        <a href="#pricing" class="hover:text-[#ccff00] transition-colors py-1">Memberships</a>
+        <a href="#location" class="hover:text-[#ccff00] transition-colors py-1 flex items-center gap-1">
+          <span class="text-rose-500">📍</span> Location
+        </a>
+        <a href="#faq" class="hover:text-[#ccff00] transition-colors py-1">FAQ</a>
+      </nav>
+
+      <!-- Desktop Header CTAs -->
+      <div class="hidden sm:flex items-center gap-3">
+        <!-- Direct WhatsApp Chat Header Button -->
+        <a 
+          href="https://wa.me/919876543210?text=Hi%20APEX%20Performance!%20I%20would%20like%20to%20enquire%20about%20membership%20plans%20and%20book%20a%20trial%20session." 
+          target="_blank" 
+          rel="noopener noreferrer"
+          class="touch-btn px-3.5 py-2 text-xs font-bold text-[#25D366] hover:text-white bg-[#25D366]/10 hover:bg-[#25D366] border border-[#25D366]/30 hover:border-[#25D366] rounded-xl transition-all flex items-center gap-1.5"
+          title="Chat directly on WhatsApp"
+        >
+          <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+            <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.694.062-2.127-.532-1.782-.74-2.91-2.544-2.999-2.663-.088-.119-.714-.951-.714-1.815 0-.864.453-1.289.614-1.464.161-.176.353-.22.47-.22.12 0 .237.002.341.007.11.006.257-.042.403.31.15.358.513 1.25.558 1.34.045.09.076.196.015.316-.06.12-.09.195-.181.301-.09.106-.188.236-.269.317-.09.09-.184.188-.079.369.106.18.471.776 1.011 1.257.697.621 1.285.814 1.465.904.18.091.286.076.392-.046.106-.12.451-.527.572-.708.12-.18.241-.15.405-.09.166.06 1.054.497 1.235.588.181.09.301.135.346.211.045.075.045.437-.099.842z"/>
+          </svg>
+          <span class="hidden md:inline">WhatsApp</span>
+        </a>
+
+        <button 
+          data-open-modal="pass" 
+          class="touch-btn px-5 py-2.5 bg-[#ccff00] hover:bg-[#b8e600] text-black font-bold text-xs uppercase tracking-wider rounded-xl volt-glow transition-all hover:scale-105"
+        >
+          Claim Free Pass
+        </button>
+      </div>
+
+      <!-- Mobile Top Action Triggers (WhatsApp + Free Pass) -->
+      <div class="sm:hidden flex items-center gap-2">
+        <a 
+          href="https://wa.me/919876543210?text=Hi%20APEX%20Performance!%20I'm%20interested%20in%20memberships%20and%20booking%20a%20free%20trial."
+          target="_blank" 
+          rel="noopener noreferrer" 
+          class="touch-btn w-9 h-9 rounded-lg bg-[#25D366]/20 border border-[#25D366]/40 text-[#25D366] flex items-center justify-center"
+          aria-label="Chat on WhatsApp"
+        >
+          <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+            <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.694.062-2.127-.532-1.782-.74-2.91-2.544-2.999-2.663-.088-.119-.714-.951-.714-1.815 0-.864.453-1.289.614-1.464.161-.176.353-.22.47-.22.12 0 .237.002.341.007.11.006.257-.042.403.31.15.358.513 1.25.558 1.34.045.09.076.196.015.316-.06.12-.09.195-.181.301-.09.106-.188.236-.269.317-.09.09-.184.188-.079.369.106.18.471.776 1.011 1.257.697.621 1.285.814 1.465.904.18.091.286.076.392-.046.106-.12.451-.527.572-.708.12-.18.241-.15.405-.09.166.06 1.054.497 1.235.588.181.09.301.135.346.211.045.075.045.437-.099.842z"/>
+          </svg>
+        </a>
+        <button 
+          data-open-modal="pass"
+          class="touch-btn px-3 py-1.5 bg-[#ccff00] text-black font-bold text-xs rounded-lg volt-glow"
+        >
+          Free Pass
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section id="hero" class="relative min-h-[90vh] lg:min-h-[92vh] flex items-center justify-center overflow-hidden pt-6 pb-16 lg:py-24">
+      <!-- Background Visual with High-Resolution Athletic Gym Imagery & Vignette -->
+      <div class="absolute inset-0 z-0">
+        <img 
+          src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1920&auto=format&fit=crop" 
+          alt="Apex Performance Athletic Floor" 
+          class="w-full h-full object-cover object-center filter brightness-[0.28] contrast-125 scale-105"
+        />
+        <div class="absolute inset-0 hero-vignette"></div>
+        <div class="absolute inset-0 bg-gradient-to-r from-[#090a0d] via-[#090a0d]/70 to-transparent"></div>
+        
+        <!-- Glowing Ambient Orbs -->
+        <div class="absolute top-1/4 left-10 w-96 h-96 bg-[#ccff00]/10 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute bottom-1/4 right-10 w-96 h-96 bg-[#ff4d00]/10 rounded-full blur-3xl pointer-events-none"></div>
+      </div>
+
+      <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          
+          <!-- Left Column: High-Energy Hero Copy -->
+          <div class="lg:col-span-8 text-center lg:text-left">
+            <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#181d26] border border-[#2b3342] text-xs font-bold text-[#ccff00] mb-6">
+              <span class="w-2 h-2 rounded-full bg-[#ccff00] badge-pulse"></span>
+              NEXT-GEN ATHLETIC FACILITY • METRO HUB
+            </div>
+
+            <h1 class="font-display text-5xl sm:text-7xl lg:text-8xl tracking-tight leading-[0.92] text-white uppercase mb-6">
+              Unleash Your <br class="hidden sm:inline">
+              <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#ccff00] via-[#e5ff80] to-[#ff4d00]">
+                Absolute Limit.
+              </span>
+            </h1>
+
+            <p class="text-base sm:text-xl text-gray-300 max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed mb-8">
+              Built for those who demand more than a generic gym. Heavy Olympic lifting racks, high-threshold metabolic conditioning, pro combat boxing, and scientific contrast therapy suites.
+            </p>
+
+            <!-- Hero CTAs -->
+            <div class="flex flex-col sm:flex-row items-stretch sm:items-center justify-center lg:justify-start gap-4 mb-12">
+              <button 
+                data-open-modal="pass"
+                class="touch-btn px-8 py-4 bg-[#ccff00] hover:bg-[#b8e600] text-black font-extrabold text-sm uppercase tracking-wider rounded-xl volt-glow transition-all hover:scale-105 flex items-center justify-center gap-2"
+              >
+                <span>Claim 3-Day Free Pass</span>
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                </svg>
+              </button>
+
+              <a 
+                href="#classes" 
+                class="touch-btn px-8 py-4 bg-[#141822] hover:bg-[#1d2331] text-white font-bold text-sm uppercase tracking-wider rounded-xl border border-[#2b3342] transition-all flex items-center justify-center gap-2"
+              >
+                <svg class="w-4 h-4 text-[#ccff00]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                </svg>
+                <span>View Classes</span>
+              </a>
+
+              <a 
+                href="#timer-section" 
+                class="touch-btn px-5 py-4 bg-transparent hover:bg-white/5 text-gray-400 hover:text-white text-xs font-semibold rounded-xl transition-all flex items-center justify-center gap-1.5"
+              >
+                <span>⏱️ Floor Timer</span>
+              </a>
+            </div>
+
+            <!-- Quick Stats Strip -->
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-8 border-t border-[#1c222c]">
+              <div class="p-3 bg-[#11141b]/80 border border-[#202634] rounded-xl text-center sm:text-left">
+                <div class="font-display text-3xl sm:text-4xl text-[#ccff00]">24/7</div>
+                <div class="text-[11px] text-gray-400 uppercase font-semibold">24/7 Access</div>
+              </div>
+
+              <div class="p-3 bg-[#11141b]/80 border border-[#202634] rounded-xl text-center sm:text-left">
+                <div class="font-display text-3xl sm:text-4xl text-white">45+</div>
+                <div class="text-[11px] text-gray-400 uppercase font-semibold">45+ Pro Trainers</div>
+              </div>
+
+              <div class="p-3 bg-[#11141b]/80 border border-[#202634] rounded-xl text-center sm:text-left">
+                <div class="font-display text-3xl sm:text-4xl text-[#ccff00]">10,000+</div>
+                <div class="text-[11px] text-gray-400 uppercase font-semibold">10,000+ Members</div>
+              </div>
+
+              <div class="p-3 bg-[#11141b]/80 border border-[#202634] rounded-xl text-center sm:text-left">
+                <div class="font-display text-3xl sm:text-4xl text-white">4.9 ★</div>
+                <div class="text-[11px] text-gray-400 uppercase font-semibold">2,800+ Reviews</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Interactive Quick Club Status & Highlight Card -->
+          <div class="lg:col-span-4 hidden lg:block">
+            <div class="glass-panel rounded-3xl p-6 border border-[#28303f] relative overflow-hidden">
+              <div class="absolute -top-10 -right-10 w-36 h-36 bg-[#ccff00]/10 rounded-full blur-2xl"></div>
+
+              <div class="flex items-center justify-between mb-4">
+                <span class="text-xs font-bold uppercase tracking-wider text-gray-400">Club Vitals</span>
+                <span class="px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-400 text-[10px] font-bold uppercase tracking-wide">
+                  All Suites Operational
+                </span>
+              </div>
+
+              <div class="bg-[#0b0d11] rounded-2xl p-4 border border-[#1e2430] mb-4">
+                <div class="flex justify-between items-center text-xs mb-2">
+                  <span class="text-gray-300 font-semibold">Live Floor Activity</span>
+                  <span id="live-capacity-text" class="text-[#ccff00] font-bold">Moderate Flow</span>
+                </div>
+                <div class="w-full h-2.5 bg-gray-800 rounded-full overflow-hidden">
+                  <div class="capacity-fill h-full bg-[#ccff00]" style="width: 48%;"></div>
+                </div>
+                <p class="text-[10px] text-gray-500 mt-2">Olympic platforms 1-6 open. Cold plunge temperature: 4.1°C.</p>
+              </div>
+
+              <div class="space-y-3 mb-6">
+                <div class="flex items-center gap-3 p-3 rounded-xl bg-[#141822] border border-[#202634]">
+                  <div class="w-8 h-8 rounded-lg bg-[#ccff00]/10 text-[#ccff00] flex items-center justify-center font-bold">
+                    🧊
+                  </div>
+                  <div class="text-xs">
+                    <span class="font-bold text-white block">Contrast Recovery Suite</span>
+                    <span class="text-gray-400">Infrared Sauna 90°C & Ice Baths</span>
+                  </div>
+                </div>
+
+                <div class="flex items-center gap-3 p-3 rounded-xl bg-[#141822] border border-[#202634]">
+                  <div class="w-8 h-8 rounded-lg bg-[#ff4d00]/10 text-[#ff4d00] flex items-center justify-center font-bold">
+                    🥊
+                  </div>
+                  <div class="text-xs">
+                    <span class="font-bold text-white block">Apex Combat Ring</span>
+                    <span class="text-gray-400">Heavy Bags, Mitt Drills & Speed Bags</span>
+                  </div>
+                </div>
+
+                <div class="flex items-center gap-3 p-3 rounded-xl bg-[#141822] border border-[#202634]">
+                  <div class="w-8 h-8 rounded-lg bg-cyan-400/10 text-cyan-400 flex items-center justify-center font-bold">
+                    ⚡
+                  </div>
+                  <div class="text-xs">
+                    <span class="font-bold text-white block">Biostrength Digital Rigs</span>
+                    <span class="text-gray-400">AI Resistance & Kinetic Velocity Tracking</span>
+                  </div>
+                </div>
+              </div>
+
+              <button 
+                onclick="openModal('pass')"
+                class="touch-btn w-full py-3 bg-[#ccff00] hover:bg-[#b8e600] text-black font-bold text-xs uppercase tracking-wider rounded-xl volt-glow"
+              >
+                Experience In Person
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- DYNAMIC CLASS SCHEDULE SECTION -->
+    <section id="classes" class="py-20 bg-[#0b0d11] border-t border-[#1c222c] relative">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Section Header -->
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
+          <div>
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#161a22] border border-[#232936] text-[11px] font-bold text-[#ccff00] uppercase tracking-wider mb-2">
+              Daily Training Calendar
+            </div>
+            <h2 class="font-display text-4xl sm:text-5xl text-white tracking-wide uppercase">
+              Live Class Schedule & Bookings
+            </h2>
+            <p class="text-sm text-gray-400 max-w-xl mt-1">
+              Select your training day and discipline. Spots are strictly capped to ensure optimal coach feedback and zero equipment crowding.
+            </p>
+          </div>
+
+          <div class="flex items-center gap-2 text-xs text-gray-400">
+            <span class="w-2.5 h-2.5 rounded-full bg-[#ccff00]"></span> Real-time Live Availability
+          </div>
+        </div>
+
+        <!-- Filter 1: Day of Week Tabs -->
+        <div class="snap-carousel flex items-center gap-2 pb-2 mb-6 border-b border-[#1c222c]">
+          <button data-day="mon" class="day-tab-btn snap-item px-4 py-2.5 rounded-xl text-xs font-bold bg-volt text-black border border-volt transition-all">
+            Mon
+          </button>
+          <button data-day="tue" class="day-tab-btn snap-item px-4 py-2.5 rounded-xl text-xs font-bold bg-[#141720] text-gray-400 border border-[#232936] hover:text-white transition-all">
+            Tue
+          </button>
+          <button data-day="wed" class="day-tab-btn snap-item px-4 py-2.5 rounded-xl text-xs font-bold bg-[#141720] text-gray-400 border border-[#232936] hover:text-white transition-all">
+            Wed
+          </button>
+          <button data-day="thu" class="day-tab-btn snap-item px-4 py-2.5 rounded-xl text-xs font-bold bg-[#141720] text-gray-400 border border-[#232936] hover:text-white transition-all">
+            Thu
+          </button>
+          <button data-day="fri" class="day-tab-btn snap-item px-4 py-2.5 rounded-xl text-xs font-bold bg-[#141720] text-gray-400 border border-[#232936] hover:text-white transition-all">
+            Fri
+          </button>
+          <button data-day="sat" class="day-tab-btn snap-item px-4 py-2.5 rounded-xl text-xs font-bold bg-[#141720] text-gray-400 border border-[#232936] hover:text-white transition-all">
+            Sat
+          </button>
+          <button data-day="sun" class="day-tab-btn snap-item px-4 py-2.5 rounded-xl text-xs font-bold bg-[#141720] text-gray-400 border border-[#232936] hover:text-white transition-all">
+            Sun
+          </button>
+        </div>
+
+        <!-- Filter 2: Category Filter Buttons -->
+        <div class="flex flex-wrap items-center gap-2 mb-8">
+          <button data-cat="all" class="cat-tab-btn px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-white text-black transition-all">
+            All Disciplines
+          </button>
+          <button data-cat="hiit" class="cat-tab-btn px-3.5 py-1.5 rounded-lg text-xs font-semibold text-gray-400 hover:text-white transition-all">
+            HIIT & MetCon
+          </button>
+          <button data-cat="strength" class="cat-tab-btn px-3.5 py-1.5 rounded-lg text-xs font-semibold text-gray-400 hover:text-white transition-all">
+            Heavy Strength
+          </button>
+          <button data-cat="boxing" class="cat-tab-btn px-3.5 py-1.5 rounded-lg text-xs font-semibold text-gray-400 hover:text-white transition-all">
+            Combat & Boxing
+          </button>
+          <button data-cat="crossfit" class="cat-tab-btn px-3.5 py-1.5 rounded-lg text-xs font-semibold text-gray-400 hover:text-white transition-all">
+            CrossFit & Turf WOD
+          </button>
+          <button data-cat="yoga" class="cat-tab-btn px-3.5 py-1.5 rounded-lg text-xs font-semibold text-gray-400 hover:text-white transition-all">
+            Mobility & Yoga
+          </button>
+        </div>
+
+        <!-- Schedule Cards (Snap Carousel on Mobile, Responsive Grid on Desktop) -->
+        <div id="schedule-cards-container" class="snap-carousel md:grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-6">
+          <!-- Dynamically populated by app.js -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SCIENTIFIC CALORIE & MACRO CALCULATOR -->
+    <section id="calculator" class="py-20 bg-[#090a0d] border-t border-[#1c222c] relative overflow-hidden">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        
+        <div class="text-center max-w-2xl mx-auto mb-12">
+          <span class="inline-block px-3 py-1 rounded-full bg-[#161a22] border border-[#232936] text-[11px] font-bold text-[#ccff00] uppercase tracking-wider mb-2">
+            Sports Science Precision
+          </span>
+          <h2 class="font-display text-4xl sm:text-5xl text-white tracking-wide uppercase">
+            Apex Macro & Calorie Engine
+          </h2>
+          <p class="text-sm text-gray-400 mt-2">
+            Calculate your custom Total Daily Energy Expenditure (TDEE) and exact macronutrient grams based on your physical parameters and specific performance targets.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+          
+          <!-- Inputs Card (Left) -->
+          <div class="lg:col-span-7 bg-[#12151b] border border-[#232936] rounded-3xl p-6 sm:p-8">
+            <form id="macro-calc-form" onsubmit="event.preventDefault();">
+              
+              <!-- Unit Selector & Gender -->
+              <div class="flex flex-wrap items-center justify-between gap-4 mb-6 pb-6 border-b border-[#1c222c]">
+                <div>
+                  <label class="block text-xs font-semibold text-gray-400 uppercase tracking-wider mb-2">Measurement System</label>
+                  <div class="flex items-center gap-1 bg-[#090a0d] p-1 rounded-xl border border-[#232936]">
+                    <button type="button" data-unit="metric" class="unit-toggle-btn px-4 py-1.5 rounded-lg text-xs font-bold bg-volt text-black transition-all">
+                      Metric (kg / cm)
+                    </button>
+                    <button type="button" data-unit="imperial" class="unit-toggle-btn px-4 py-1.5 rounded-lg text-xs font-bold bg-[#141720] text-gray-400 hover:text-white transition-all">
+                      Imperial (lbs / ft)
+                    </button>
+                  </div>
+                </div>
+
+                <div>
+                  <label class="block text-xs font-semibold text-gray-400 uppercase tracking-wider mb-2">Biological Sex</label>
+                  <div class="flex items-center gap-2">
+                    <label class="flex items-center gap-2 cursor-pointer bg-[#181c25] px-3.5 py-1.5 rounded-xl border border-[#28303f] text-xs">
+                      <input type="radio" name="calc-gender" value="male" checked class="accent-[#ccff00]">
+                      <span class="text-gray-200">Male</span>
+                    </label>
+                    <label class="flex items-center gap-2 cursor-pointer bg-[#181c25] px-3.5 py-1.5 rounded-xl border border-[#28303f] text-xs">
+                      <input type="radio" name="calc-gender" value="female" class="accent-[#ccff00]">
+                      <span class="text-gray-200">Female</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Interactive Sliders -->
+              <div class="space-y-6 mb-8">
+                
+                <!-- Weight Slider -->
+                <div>
+                  <div class="flex justify-between items-center mb-2">
+                    <span class="text-xs font-bold text-gray-300 uppercase tracking-wider">Current Weight</span>
+                    <span id="weight-display-val" class="font-display text-xl text-[#ccff00]">78 kg</span>
+                  </div>
+                  <input type="range" id="calc-weight" min="45" max="150" value="78" step="1">
+                  <div class="flex justify-between text-[10px] text-gray-500 mt-1">
+                    <span>Min</span>
+                    <span>Max</span>
+                  </div>
+                </div>
+
+                <!-- Height Slider -->
+                <div>
+                  <div class="flex justify-between items-center mb-2">
+                    <span class="text-xs font-bold text-gray-300 uppercase tracking-wider">Height</span>
+                    <span id="height-display-val" class="font-display text-xl text-[#ccff00]">178 cm</span>
+                  </div>
+                  <input type="range" id="calc-height" min="140" max="215" value="178" step="1">
+                  <div class="flex justify-between text-[10px] text-gray-500 mt-1">
+                    <span>Min</span>
+                    <span>Max</span>
+                  </div>
+                </div>
+
+                <!-- Age Slider -->
+                <div>
+                  <div class="flex justify-between items-center mb-2">
+                    <span class="text-xs font-bold text-gray-300 uppercase tracking-wider">Age</span>
+                    <span id="age-display-val" class="font-display text-xl text-[#ccff00]">28 yrs</span>
+                  </div>
+                  <input type="range" id="calc-age" min="16" max="75" value="28" step="1">
+                </div>
+
+              </div>
+
+              <!-- Fitness Goal Selection -->
+              <div class="mb-6">
+                <label class="block text-xs font-bold text-gray-300 uppercase tracking-wider mb-2.5">Primary Target Goal</label>
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-2.5">
+                  <label class="cursor-pointer bg-[#181c25] hover:bg-[#1d222e] p-3 rounded-xl border border-[#28303f] flex flex-col justify-between transition-all">
+                    <div class="flex items-center justify-between mb-1">
+                      <span class="text-xs font-bold text-white">Fat Loss</span>
+                      <input type="radio" name="calc-goal" value="fatloss" class="accent-[#ccff00]">
+                    </div>
+                    <span class="text-[10px] text-gray-400">-20% Deficit • High Protein</span>
+                  </label>
+
+                  <label class="cursor-pointer bg-[#181c25] hover:bg-[#1d222e] p-3 rounded-xl border border-[#28303f] flex flex-col justify-between transition-all">
+                    <div class="flex items-center justify-between mb-1">
+                      <span class="text-xs font-bold text-white">Recomposition</span>
+                      <input type="radio" name="calc-goal" value="maintenance" checked class="accent-[#ccff00]">
+                    </div>
+                    <span class="text-[10px] text-gray-400">Maintain TDEE • Athletic Power</span>
+                  </label>
+
+                  <label class="cursor-pointer bg-[#181c25] hover:bg-[#1d222e] p-3 rounded-xl border border-[#28303f] flex flex-col justify-between transition-all">
+                    <div class="flex items-center justify-between mb-1">
+                      <span class="text-xs font-bold text-white">Muscle Bulk</span>
+                      <input type="radio" name="calc-goal" value="bulk" class="accent-[#ccff00]">
+                    </div>
+                    <span class="text-[10px] text-gray-400">+15% Surplus • Hypertrophy</span>
+                  </label>
+                </div>
+              </div>
+
+              <!-- Activity Level -->
+              <div>
+                <label class="block text-xs font-bold text-gray-300 uppercase tracking-wider mb-2.5">Weekly Training Frequency</label>
+                <div class="grid grid-cols-2 sm:grid-cols-4 gap-2 text-xs">
+                  <label class="p-2.5 bg-[#181c25] rounded-xl border border-[#28303f] cursor-pointer text-center">
+                    <input type="radio" name="calc-activity" value="1.2" class="hidden">
+                    <span class="block font-semibold text-gray-300">1-2 Days</span>
+                    <span class="text-[9px] text-gray-500">Light</span>
+                  </label>
+                  <label class="p-2.5 bg-[#181c25] rounded-xl border border-[#28303f] cursor-pointer text-center">
+                    <input type="radio" name="calc-activity" value="1.45" class="hidden">
+                    <span class="block font-semibold text-gray-300">3-4 Days</span>
+                    <span class="text-[9px] text-gray-500">Moderate</span>
+                  </label>
+                  <label class="p-2.5 bg-[#181c25] rounded-xl border border-[#28303f] cursor-pointer text-center ring-1 ring-[#ccff00]/40">
+                    <input type="radio" name="calc-activity" value="1.65" checked class="hidden">
+                    <span class="block font-semibold text-[#ccff00]">5-6 Days</span>
+                    <span class="text-[9px] text-gray-400">Hard Athlete</span>
+                  </label>
+                  <label class="p-2.5 bg-[#181c25] rounded-xl border border-[#28303f] cursor-pointer text-center">
+                    <input type="radio" name="calc-activity" value="1.9" class="hidden">
+                    <span class="block font-semibold text-gray-300">2x Daily</span>
+                    <span class="text-[9px] text-gray-500">Pro Fighter</span>
+                  </label>
+                </div>
+              </div>
+
+            </form>
+          </div>
+
+          <!-- Dynamic Output Card (Right) -->
+          <div class="lg:col-span-5 bg-gradient-to-b from-[#161a22] to-[#101319] border border-[#28303f] rounded-3xl p-6 sm:p-8 flex flex-col justify-between volt-glow relative overflow-hidden">
+            <div class="absolute -top-16 -right-16 w-44 h-44 bg-[#ccff00]/10 rounded-full blur-3xl"></div>
+
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <span class="text-xs font-bold uppercase tracking-wider text-gray-400">Calculated Daily Target</span>
+                <span class="px-2.5 py-0.5 rounded-full bg-[#ccff00] text-black font-extrabold text-[10px] uppercase">
+                  Active Formula
+                </span>
+              </div>
+
+              <!-- Big Calories Display -->
+              <div class="bg-[#0b0e14] border border-[#202735] rounded-2xl p-6 text-center mb-6 relative">
+                <span class="text-xs font-bold text-gray-400 uppercase tracking-widest block mb-1">
+                  Optimal Daily Calorie Target
+                </span>
+                <div class="font-display text-6xl sm:text-7xl text-[#ccff00] tracking-tight leading-none my-1 flex items-baseline justify-center gap-2">
+                  <span id="calories-target-display">2,650</span>
+                  <span class="text-xl sm:text-2xl text-gray-400 font-sans font-bold">kcal</span>
+                </div>
+                <p class="text-xs text-gray-400">Calibrated for lean muscle mass retention and optimal recovery output.</p>
+              </div>
+
+              <!-- Macro Breakdown Cards -->
+              <div class="space-y-4 mb-6">
+                <!-- Protein -->
+                <div class="bg-[#12161f] p-4 rounded-xl border border-[#222938]">
+                  <div class="flex justify-between items-center text-xs mb-1.5">
+                    <div class="flex items-center gap-2">
+                      <span class="w-2.5 h-2.5 rounded-full bg-[#ccff00]"></span>
+                      <span class="font-bold text-white uppercase">Protein (Muscle Synthesis)</span>
+                    </div>
+                    <div>
+                      <span id="protein-grams-display" class="font-display text-lg text-[#ccff00]">172g</span>
+                      <span id="protein-pct-display" class="text-xs text-gray-400 ml-1">(26%)</span>
+                    </div>
+                  </div>
+                  <div class="w-full h-2 bg-gray-800 rounded-full overflow-hidden">
+                    <div id="protein-bar" class="macro-bar-fill h-full bg-[#ccff00]" style="width: 26%;"></div>
+                  </div>
+                </div>
+
+                <!-- Carbs -->
+                <div class="bg-[#12161f] p-4 rounded-xl border border-[#222938]">
+                  <div class="flex justify-between items-center text-xs mb-1.5">
+                    <div class="flex items-center gap-2">
+                      <span class="w-2.5 h-2.5 rounded-full bg-cyan-400"></span>
+                      <span class="font-bold text-white uppercase">Carbohydrates (Glycogen Energy)</span>
+                    </div>
+                    <div>
+                      <span id="carbs-grams-display" class="font-display text-lg text-cyan-400">298g</span>
+                      <span id="carbs-pct-display" class="text-xs text-gray-400 ml-1">(45%)</span>
+                    </div>
+                  </div>
+                  <div class="w-full h-2 bg-gray-800 rounded-full overflow-hidden">
+                    <div id="carbs-bar" class="macro-bar-fill h-full bg-cyan-400" style="width: 45%;"></div>
+                  </div>
+                </div>
+
+                <!-- Fats -->
+                <div class="bg-[#12161f] p-4 rounded-xl border border-[#222938]">
+                  <div class="flex justify-between items-center text-xs mb-1.5">
+                    <div class="flex items-center gap-2">
+                      <span class="w-2.5 h-2.5 rounded-full bg-[#ff4d00]"></span>
+                      <span class="font-bold text-white uppercase">Healthy Fats (Hormone Health)</span>
+                    </div>
+                    <div>
+                      <span id="fats-grams-display" class="font-display text-lg text-[#ff4d00]">66g</span>
+                      <span id="fats-pct-display" class="text-xs text-gray-400 ml-1">(29%)</span>
+                    </div>
+                  </div>
+                  <div class="w-full h-2 bg-gray-800 rounded-full overflow-hidden">
+                    <div id="fats-bar" class="macro-bar-fill h-full bg-[#ff4d00]" style="width: 29%;"></div>
+                  </div>
+                </div>
+
+                <!-- Hydration Recommendation -->
+                <div class="flex items-center justify-between p-3 rounded-xl bg-[#0e1218] border border-[#1e2533] text-xs">
+                  <span class="text-gray-400">💧 Target Daily Hydration:</span>
+                  <span id="water-liters-display" class="font-bold text-cyan-300">3.4 Litres</span>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Action Button -->
+            <button 
+              id="save-nutrition-btn" 
+              class="touch-btn w-full py-3.5 bg-[#ccff00] hover:bg-[#b8e600] text-black font-extrabold text-xs uppercase tracking-wider rounded-xl volt-glow transition-all flex items-center justify-center gap-2"
+            >
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-3m-1 4l-3 3m0 0l-3-3m3 3V4"/>
+              </svg>
+              <span>Export & Save Protocol</span>
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- APEX AMENITIES & RECOVERY SUITES -->
+    <section id="amenities" class="py-20 bg-[#0b0d11] border-t border-[#1c222c]">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+          <div>
+            <span class="inline-block px-3 py-1 rounded-full bg-[#161a22] border border-[#232936] text-[11px] font-bold text-[#ccff00] uppercase tracking-wider mb-2">
+              Beyond Conventional Weights
+            </span>
+            <h2 class="font-display text-4xl sm:text-5xl text-white tracking-wide uppercase">
+              Athletic Luxury Amenities
+            </h2>
+            <p class="text-sm text-gray-400 max-w-xl mt-1">
+              Recover as aggressively as you train. Our facility is engineered with championship recovery hardware and Olympic-spec equipment.
+            </p>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          
+          <!-- Amenity 1: Cold Plunge & Sauna -->
+          <div class="group bg-[#12151b] border border-[#232936] rounded-2xl overflow-hidden interactive-card">
+            <div class="h-48 overflow-hidden relative">
+              <img 
+                src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=800&auto=format&fit=crop" 
+                alt="Cold Plunge and Sauna" 
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 brightness-90"
+              />
+              <span class="absolute top-3 left-3 px-2.5 py-1 rounded bg-black/70 backdrop-blur text-[10px] font-bold text-cyan-300 uppercase tracking-wider border border-cyan-400/30">
+                4°C Cold Plunge
+              </span>
+            </div>
+            <div class="p-5">
+              <h3 class="font-accent text-lg font-bold text-white mb-1.5 group-hover:text-[#ccff00] transition-colors">
+                Contrast Therapy Suites
+              </h3>
+              <p class="text-xs text-gray-400 leading-relaxed">
+                4°C filtered ice plunge paired with 90°C Finnish infrared saunas for vascular flush, accelerated CNS recovery, and reduced inflammation.
+              </p>
+            </div>
+          </div>
+
+          <!-- Amenity 2: Olympic Racks -->
+          <div class="group bg-[#12151b] border border-[#232936] rounded-2xl overflow-hidden interactive-card">
+            <div class="h-48 overflow-hidden relative">
+              <img 
+                src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?q=80&w=800&auto=format&fit=crop" 
+                alt="Olympic Lifting Racks" 
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 brightness-90"
+              />
+              <span class="absolute top-3 left-3 px-2.5 py-1 rounded bg-black/70 backdrop-blur text-[10px] font-bold text-[#ccff00] uppercase tracking-wider border border-[#ccff00]/30">
+                Eleiko Calibrated
+              </span>
+            </div>
+            <div class="p-5">
+              <h3 class="font-accent text-lg font-bold text-white mb-1.5 group-hover:text-[#ccff00] transition-colors">
+                Olympic Weightlifting Alleys
+              </h3>
+              <p class="text-xs text-gray-400 leading-relaxed">
+                Custom oak drop-platforms, calibrated competition bumper plates, 29mm stainless barbells, and Chalk Basins for raw power.
+              </p>
+            </div>
+          </div>
+
+          <!-- Amenity 3: Recovery Lounge -->
+          <div class="group bg-[#12151b] border border-[#232936] rounded-2xl overflow-hidden interactive-card">
+            <div class="h-48 overflow-hidden relative">
+              <img 
+                src="https://images.unsplash.com/photo-1518611012118-696072aa579a?q=80&w=800&auto=format&fit=crop" 
+                alt="Hyperice Recovery Lounge" 
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 brightness-90"
+              />
+              <span class="absolute top-3 left-3 px-2.5 py-1 rounded bg-black/70 backdrop-blur text-[10px] font-bold text-[#ff4d00] uppercase tracking-wider border border-[#ff4d00]/30">
+                Hyperice & Normatec
+              </span>
+            </div>
+            <div class="p-5">
+              <h3 class="font-accent text-lg font-bold text-white mb-1.5 group-hover:text-[#ccff00] transition-colors">
+                Normatec Compression Lounge
+              </h3>
+              <p class="text-xs text-gray-400 leading-relaxed">
+                Pneumatic compression boots, localized cryotherapy guns, and zero-gravity recliners to eliminate post-workout soreness in under 20 minutes.
+              </p>
+            </div>
+          </div>
+
+          <!-- Amenity 4: Fuel Bar -->
+          <div class="group bg-[#12151b] border border-[#232936] rounded-2xl overflow-hidden interactive-card">
+            <div class="h-48 overflow-hidden relative">
+              <img 
+                src="https://images.unsplash.com/photo-1549060279-7e168fcee0c2?q=80&w=800&auto=format&fit=crop" 
+                alt="Fuel and Shake Bar" 
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 brightness-90"
+              />
+              <span class="absolute top-3 left-3 px-2.5 py-1 rounded bg-black/70 backdrop-blur text-[10px] font-bold text-emerald-400 uppercase tracking-wider border border-emerald-400/30">
+                Grass-Fed & Clean
+              </span>
+            </div>
+            <div class="p-5">
+              <h3 class="font-accent text-lg font-bold text-white mb-1.5 group-hover:text-[#ccff00] transition-colors">
+                Apex Fuel & Protein Lounge
+              </h3>
+              <p class="text-xs text-gray-400 leading-relaxed">
+                Cold-brew nitrogen coffee, customized whey & pea isolate shakes, amino acid electrolyte taps, and pre-workout elixir bar.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- TRAINERS SHOWCASE -->
+    <section id="trainers" class="py-20 bg-[#090a0d] border-t border-[#1c222c]">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+          <div>
+            <span class="inline-block px-3 py-1 rounded-full bg-[#161a22] border border-[#232936] text-[11px] font-bold text-[#ccff00] uppercase tracking-wider mb-2">
+              The Coaching Cadre
+            </span>
+            <h2 class="font-display text-4xl sm:text-5xl text-white tracking-wide uppercase">
+              Elite Performance Coaches
+            </h2>
+            <p class="text-sm text-gray-400 max-w-xl mt-1">
+              No generic gym staff. Every APEX coach has competed at national/international levels with verified sports science certifications.
+            </p>
+          </div>
+
+          <button 
+            onclick="openModal('consult')"
+            class="touch-btn px-5 py-2.5 rounded-xl border border-[#28303f] hover:border-[#ccff00] text-xs font-bold text-gray-200 hover:text-white transition-all self-start md:self-auto"
+          >
+            Request Coach Matching
+          </button>
+        </div>
+
+        <!-- Snap carousel on mobile, 4-column deck on desktop -->
+        <div id="trainers-deck" class="snap-carousel md:grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- Populated by app.js -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ATHLETIC FLOOR INTERVAL TIMER WIDGET (BONUS FEATURE) -->
+    <section id="timer-section" class="py-16 bg-[#0e1117] border-t border-[#1c222c]">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6">
+        
+        <div class="bg-[#141720] border border-[#232936] rounded-3xl p-6 sm:p-8 volt-glow">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
+            <div>
+              <span class="text-[10px] font-bold tracking-widest text-[#ccff00] uppercase block">Floor Tool</span>
+              <h3 class="font-display text-2xl sm:text-3xl text-white uppercase">Gym Floor Interval Timer</h3>
+            </div>
+
+            <!-- Mode Selector -->
+            <div class="flex items-center gap-1.5 bg-[#090a0d] p-1 rounded-xl border border-[#232936]">
+              <button type="button" data-mode="tabata" class="timer-mode-btn px-3 py-1.5 rounded-lg text-xs font-bold bg-volt text-black transition-all">
+                Tabata (20/10)
+              </button>
+              <button type="button" data-mode="hiit" class="timer-mode-btn px-3 py-1.5 rounded-lg text-xs font-bold bg-[#1a1f29] text-gray-400 hover:text-white transition-all">
+                HIIT (40/20)
+              </button>
+              <button type="button" data-mode="emom" class="timer-mode-btn px-3 py-1.5 rounded-lg text-xs font-bold bg-[#1a1f29] text-gray-400 hover:text-white transition-all">
+                EMOM (50/10)
+              </button>
+            </div>
+          </div>
+
+          <!-- Display -->
+          <div class="bg-[#090a0d] rounded-2xl p-6 sm:p-8 border border-[#202735] text-center mb-6">
+            <div id="timer-phase-display" class="inline-block text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full bg-[#ff4d00]/20 text-[#ff4d00] border border-[#ff4d00]/30 mb-2">
+              WORK PHASE 🔥
+            </div>
+
+            <div id="timer-time-display" class="font-display text-7xl sm:text-9xl text-white tracking-tight leading-none my-2 font-mono">
+              00:20
+            </div>
+
+            <div id="timer-round-display" class="text-sm font-semibold text-gray-400">
+              Round 1 of 8
+            </div>
+          </div>
+
+          <!-- Controls -->
+          <div class="flex items-center justify-center gap-4">
+            <button 
+              id="timer-toggle-btn"
+              class="touch-btn px-8 py-3.5 bg-[#ccff00] hover:bg-[#b8e600] text-black font-extrabold text-sm uppercase tracking-wider rounded-xl volt-glow transition-all"
+            >
+              Start Interval
+            </button>
+            <button 
+              id="timer-reset-btn"
+              class="touch-btn px-6 py-3.5 bg-[#1e232e] hover:bg-[#252c3a] text-gray-300 font-bold text-xs uppercase tracking-wider rounded-xl border border-[#2b3342] transition-all"
+            >
+              Reset
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- MEMBERSHIP PRICING TIER CARDS (INDIAN RUPEES DEFAULT WITH CURRENCY TOGGLE) -->
+    <section id="pricing" class="py-20 bg-[#090a0d] border-t border-[#1c222c] relative">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-2xl mx-auto mb-10">
+          <span class="inline-block px-3 py-1 rounded-full bg-[#161a22] border border-[#232936] text-[11px] font-bold text-[#ccff00] uppercase tracking-wider mb-2">
+            Transparent Pricing • Zero Hidden Lock-ins
+          </span>
+          <h2 class="font-display text-4xl sm:text-5xl text-white tracking-wide uppercase">
+            Athletic Memberships
+          </h2>
+          <p class="text-sm text-gray-400 mt-2">
+            Unlock biometric 24/7 access, world-class Olympic coaching, and contrast therapy recovery.
+          </p>
+
+          <!-- Currency Selector (INR Default / USD Global) -->
+          <div class="flex items-center justify-center gap-2 mt-5 mb-3">
+            <button 
+              type="button" 
+              id="curr-inr-btn" 
+              onclick="setCurrency('INR')"
+              class="currency-toggle-btn px-4 py-1.5 rounded-xl text-xs font-bold bg-[#ccff00] text-black border border-[#ccff00] transition-all shadow-md"
+            >
+              🇮🇳 ₹ INR (India)
+            </button>
+            <button 
+              type="button" 
+              id="curr-usd-btn" 
+              onclick="setCurrency('USD')"
+              class="currency-toggle-btn px-4 py-1.5 rounded-xl text-xs font-bold bg-[#141720] text-gray-400 border border-[#232936] hover:text-white transition-all"
+            >
+              🌐 $ USD (Global)
+            </button>
+          </div>
+
+          <!-- Monthly / Annual Toggle Switch -->
+          <div class="flex items-center justify-center gap-3 mt-4">
+            <span class="text-xs font-semibold text-gray-400">Billed Monthly</span>
+            <label class="relative inline-flex items-center cursor-pointer">
+              <input type="checkbox" id="billing-cycle-toggle" class="sr-only peer">
+              <div class="w-14 h-7 bg-gray-800 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[4px] after:bg-[#ccff00] after:border-gray-300 after:border after:rounded-full after:h-6 after:w-6 after:transition-all peer-checked:bg-[#1a2230]"></div>
+            </label>
+            <span class="text-xs font-semibold text-white flex items-center gap-1.5">
+              Billed Annually
+              <span id="annual-savings-badge" class="px-2 py-0.5 rounded-full bg-[#ccff00]/20 text-[#ccff00] text-[10px] font-extrabold uppercase transition-all">
+                Save 20% + Zero Admission Fee
+              </span>
+            </span>
+          </div>
+        </div>
+
+        <!-- 3 Tiers Grid -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch">
+          
+          <!-- Tier 1: Basic -->
+          <div class="bg-[#12151b] border border-[#232936] rounded-3xl p-6 sm:p-8 flex flex-col justify-between interactive-card">
+            <div>
+              <span class="text-xs font-bold text-gray-400 uppercase tracking-widest block mb-2">Tier 01</span>
+              <h3 class="font-display text-3xl text-white uppercase mb-2">Basic</h3>
+              <p class="text-xs text-gray-400 mb-6">Foundational entry to all weight floors, cardio decks, and standard locker rooms.</p>
+
+              <div class="flex items-baseline gap-1 mb-6">
+                <span id="price-basic" class="font-display text-5xl text-white">₹2,999</span>
+                <span id="period-basic" class="text-xs text-gray-400 font-semibold">/month</span>
+              </div>
+
+              <div class="space-y-3 text-xs text-gray-300 border-t border-[#1c222c] pt-6 mb-8">
+                <div class="flex items-center gap-2.5">
+                  <svg class="w-4 h-4 text-[#ccff00] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+                  <span>24/7 Biometric Gym Floor Access</span>
+                </div>
+                <div class="flex items-center gap-2.5">
+                  <svg class="w-4 h-4 text-[#ccff00] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+                  <span>All Olympic Platforms & Eleiko Plates</span>
+                </div>
+                <div class="flex items-center gap-2.5">
+                  <svg class="w-4 h-4 text-[#ccff00] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+                  <span>Steam & Rain Shower Locker Suites</span>
+                </div>
+                <div class="flex items-center gap-2.5 text-gray-500">
+                  <svg class="w-4 h-4 text-gray-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+                  <span>Group Classes Not Included</span>
+                </div>
+                <div class="flex items-center gap-2.5 text-gray-500">
+                  <svg class="w-4 h-4 text-gray-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+                  <span>Contrast Therapy Pass Excluded</span>
+                </div>
+              </div>
+            </div>
+
+            <button 
+              onclick="handleSelectCurrentPlan('Basic')"
+              class="touch-btn w-full py-3.5 bg-[#1a1f2a] hover:bg-[#252c3c] text-white font-bold text-xs uppercase tracking-wider rounded-xl border border-[#2b3342] transition-all"
+            >
+              Select Plan
+            </button>
+          </div>
+
+          <!-- Tier 2: Pro (RECOMMENDED - Animated Glowing Border) -->
+          <div class="neon-border-animated rounded-3xl p-6 sm:p-8 flex flex-col justify-between relative bg-[#12151b] z-10 scale-100 lg:-translate-y-2 shadow-2xl">
+            <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 px-4 py-1 rounded-full bg-[#ccff00] text-black font-extrabold text-[11px] uppercase tracking-wider shadow-lg shadow-[#ccff00]/40">
+              ⚡ Recommended • Most Popular
+            </div>
+
+            <div>
+              <span class="text-xs font-bold text-[#ccff00] uppercase tracking-widest block mb-2">Tier 02</span>
+              <h3 class="font-display text-4xl text-white uppercase mb-2">Pro</h3>
+              <p class="text-xs text-gray-300 mb-6">The ultimate performance tier with unlimited high-energy coaching classes and recovery access.</p>
+
+              <div class="flex items-baseline gap-1 mb-6">
+                <span id="price-elite" class="font-display text-6xl text-[#ccff00]">₹4,999</span>
+                <span id="period-elite" class="text-xs text-gray-300 font-semibold">/month</span>
+              </div>
+
+              <div class="space-y-3 text-xs text-gray-200 border-t border-[#2a3243] pt-6 mb-8">
+                <div class="flex items-center gap-2.5">
+                  <svg class="w-4 h-4 text-[#ccff00] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+                  <span class="font-bold text-white">Unlimited Classes (HIIT, Boxing, Yoga, CrossFit)</span>
+                </div>
+                <div class="flex items-center gap-2.5">
+                  <svg class="w-4 h-4 text-[#ccff00] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+                  <span>24/7 RFID Keycard & Indiranagar Club Privileges</span>
+                </div>
+                <div class="flex items-center gap-2.5">
+                  <svg class="w-4 h-4 text-[#ccff00] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+                  <span>Contrast Therapy: 4x Monthly Ice Plunge & Sauna</span>
+                </div>
+                <div class="flex items-center gap-2.5">
+                  <svg class="w-4 h-4 text-[#ccff00] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+                  <span>1 Free Coach Consultation & Biometrics Scan</span>
+                </div>
+                <div class="flex items-center gap-2.5">
+                  <svg class="w-4 h-4 text-[#ccff00] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+                  <span>10% Discount at Apex Fuel Shake Lounge</span>
+                </div>
+              </div>
+            </div>
+
+            <button 
+              onclick="handleSelectCurrentPlan('Pro')"
+              class="touch-btn w-full py-4 bg-[#ccff00] hover:bg-[#b8e600] text-black font-extrabold text-xs uppercase tracking-wider rounded-xl volt-glow transition-all hover:scale-105"
+            >
+              Select Plan
+            </button>
+          </div>
+
+          <!-- Tier 3: Elite VIP -->
+          <div class="bg-[#12151b] border border-[#232936] rounded-3xl p-6 sm:p-8 flex flex-col justify-between interactive-card">
+            <div>
+              <span class="text-xs font-bold text-gray-400 uppercase tracking-widest block mb-2">Tier 03</span>
+              <h3 class="font-display text-3xl text-white uppercase mb-2">Elite VIP</h3>
+              <p class="text-xs text-gray-400 mb-6">Concierge-level athletic luxury with dedicated personal training and private recovery suites.</p>
+
+              <div class="flex items-baseline gap-1 mb-6">
+                <span id="price-vip" class="font-display text-5xl text-white">₹8,999</span>
+                <span id="period-vip" class="text-xs text-gray-400 font-semibold">/month</span>
+              </div>
+
+              <div class="space-y-3 text-xs text-gray-300 border-t border-[#1c222c] pt-6 mb-8">
+                <div class="flex items-center gap-2.5">
+                  <svg class="w-4 h-4 text-[#ccff00] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+                  <span>All Pro Benefits Included</span>
+                </div>
+                <div class="flex items-center gap-2.5">
+                  <svg class="w-4 h-4 text-[#ccff00] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+                  <span class="font-bold text-white">4x Monthly 1-on-1 Personal Training Sessions</span>
+                </div>
+                <div class="flex items-center gap-2.5">
+                  <svg class="w-4 h-4 text-[#ccff00] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+                  <span>Unlimited Daily Cold Plunge & Finnish Sauna</span>
+                </div>
+                <div class="flex items-center gap-2.5">
+                  <svg class="w-4 h-4 text-[#ccff00] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+                  <span>Dedicated Permanent Locker with Towel Service</span>
+                </div>
+                <div class="flex items-center gap-2.5">
+                  <svg class="w-4 h-4 text-[#ccff00] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+                  <span>Complimentary Guest Pass on Every Visit</span>
+                </div>
+              </div>
+            </div>
+
+            <button 
+              onclick="handleSelectCurrentPlan('Elite VIP')"
+              class="touch-btn w-full py-3.5 bg-[#1a1f2a] hover:bg-[#252c3c] text-white font-bold text-xs uppercase tracking-wider rounded-xl border border-[#2b3342] transition-all"
+            >
+              Select Plan
+            </button>
+          </div>
+
+        </div>
+
+        <!-- WhatsApp Membership Concierge Banner -->
+        <div class="mt-12 p-6 rounded-2xl bg-[#12151b] border border-[#232936] max-w-2xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
+          <div class="flex items-center gap-3">
+            <div class="w-12 h-12 rounded-2xl bg-[#25D366]/20 border border-[#25D366]/40 text-[#25D366] flex items-center justify-center shrink-0">
+              <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.694.062-2.127-.532-1.782-.74-2.91-2.544-2.999-2.663-.088-.119-.714-.951-.714-1.815 0-.864.453-1.289.614-1.464.161-.176.353-.22.47-.22.12 0 .237.002.341.007.11.006.257-.042.403.31.15.358.513 1.25.558 1.34.045.09.076.196.015.316-.06.12-.09.195-.181.301-.09.106-.188.236-.269.317-.09.09-.184.188-.079.369.106.18.471.776 1.011 1.257.697.621 1.285.814 1.465.904.18.091.286.076.392-.046.106-.12.451-.527.572-.708.12-.18.241-.15.405-.09.166.06 1.054.497 1.235.588.181.09.301.135.346.211.045.075.045.437-.099.842z"/></svg>
+            </div>
+            <div>
+              <span class="text-sm font-bold text-white block">Need Custom Corporate or Athlete Plans?</span>
+              <span class="text-xs text-gray-400">Chat directly with our Bangalore membership team on WhatsApp for instant assistance.</span>
+            </div>
+          </div>
+          <a 
+            href="https://wa.me/919876543210?text=Hi%20APEX%20Performance!%20I'd%20like%20to%20know%20about%20membership%20plans%20and%20corporate%20rates." 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            class="touch-btn px-5 py-3 bg-[#25D366] hover:bg-[#20ba59] text-black font-extrabold text-xs uppercase tracking-wider rounded-xl transition-all shrink-0 flex items-center gap-2"
+          >
+            <span>Chat on WhatsApp</span>
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.694.062-2.127-.532-1.782-.74-2.91-2.544-2.999-2.663-.088-.119-.714-.951-.714-1.815 0-.864.453-1.289.614-1.464.161-.176.353-.22.47-.22.12 0 .237.002.341.007.11.006.257-.042.403.31.15.358.513 1.25.558 1.34.045.09.076.196.015.316-.06.12-.09.195-.181.301-.09.106-.188.236-.269.317-.09.09-.184.188-.079.369.106.18.471.776 1.011 1.257.697.621 1.285.814 1.465.904.18.091.286.076.392-.046.106-.12.451-.527.572-.708.12-.18.241-.15.405-.09.166.06 1.054.497 1.235.588.181.09.301.135.346.211.045.075.045.437-.099.842z"/></svg>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FLAGSHIP CLUB LOCATION WITH INTERACTIVE GOOGLE MAP -->
+    <section id="location" class="py-20 bg-[#0b0e14] border-t border-[#1c222c] relative">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+          <div>
+            <span class="inline-block px-3 py-1 rounded-full bg-[#161a22] border border-[#232936] text-[11px] font-bold text-[#ccff00] uppercase tracking-wider mb-2">
+              Visit The Facility
+            </span>
+            <h2 class="font-display text-4xl sm:text-5xl text-white tracking-wide uppercase">
+              Flagship Athletic Club & Map
+            </h2>
+            <p class="text-sm text-gray-400 max-w-xl mt-1">
+              Conveniently located in the heart of Indiranagar, Bengaluru. Valet parking, biometric turnstiles, and rooftop turf access.
+            </p>
+          </div>
+
+          <div class="flex flex-wrap items-center gap-3">
+            <a 
+              href="https://maps.google.com/?q=100+Feet+Road+Indiranagar+Bengaluru" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              class="touch-btn px-4 py-2.5 rounded-xl bg-[#161a22] hover:bg-[#202634] text-xs font-bold text-white border border-[#2b3342] transition-all flex items-center gap-2"
+            >
+              <svg class="w-4 h-4 text-rose-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+              <span>Get Directions</span>
+            </a>
+
+            <a 
+              href="https://wa.me/919876543210?text=Hi%20APEX%20Performance!%20Please%20share%20your%20exact%20Google%20Map%20location%20and%20parking%20instructions." 
+              target="_blank" 
+              rel="noopener noreferrer"
+              class="touch-btn px-4 py-2.5 rounded-xl bg-[#25D366] hover:bg-[#20ba59] text-black font-extrabold text-xs uppercase tracking-wider transition-all flex items-center gap-2"
+            >
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.694.062-2.127-.532-1.782-.74-2.91-2.544-2.999-2.663-.088-.119-.714-.951-.714-1.815 0-.864.453-1.289.614-1.464.161-.176.353-.22.47-.22.12 0 .237.002.341.007.11.006.257-.042.403.31.15.358.513 1.25.558 1.34.045.09.076.196.015.316-.06.12-.09.195-.181.301-.09.106-.188.236-.269.317-.09.09-.184.188-.079.369.106.18.471.776 1.011 1.257.697.621 1.285.814 1.465.904.18.091.286.076.392-.046.106-.12.451-.527.572-.708.12-.18.241-.15.405-.09.166.06 1.054.497 1.235.588.181.09.301.135.346.211.045.075.045.437-.099.842z"/></svg>
+              <span>WhatsApp Location</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+          
+          <!-- Location Details Card (Left 5 Cols) -->
+          <div class="lg:col-span-5 bg-[#12151b] border border-[#232936] rounded-3xl p-6 sm:p-8 flex flex-col justify-between">
+            <div class="space-y-6">
+              
+              <!-- Address Item -->
+              <div class="flex items-start gap-3.5">
+                <div class="w-10 h-10 rounded-xl bg-[#ccff00]/10 border border-[#ccff00]/30 text-[#ccff00] flex items-center justify-center shrink-0 mt-0.5">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                </div>
+                <div>
+                  <h4 class="font-bold text-white text-sm mb-1 uppercase tracking-wide">Club Address</h4>
+                  <p class="text-xs text-gray-300 leading-relaxed">
+                    APEX PERFORMANCE Flagship Hub<br>
+                    Plot 148, 100 Feet Road, HAL 2nd Stage,<br>
+                    Indiranagar, Bengaluru, Karnataka 560038, India
+                  </p>
+                  <p class="text-[11px] text-[#ccff00] font-semibold mt-1">
+                    Landmark: Opp. Metro Pillar 78 • 2 Mins from Indiranagar Metro Station
+                  </p>
+                </div>
+              </div>
+
+              <!-- Timings Item -->
+              <div class="flex items-start gap-3.5 border-t border-[#1c222c] pt-5">
+                <div class="w-10 h-10 rounded-xl bg-cyan-400/10 border border-cyan-400/30 text-cyan-400 flex items-center justify-center shrink-0 mt-0.5">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                </div>
+                <div>
+                  <h4 class="font-bold text-white text-sm mb-1 uppercase tracking-wide">Operational Hours</h4>
+                  <ul class="text-xs text-gray-300 space-y-1">
+                    <li><span class="text-gray-400">Gym Floor & Weights:</span> <strong class="text-white">24/7 (Biometric Keycard)</strong></li>
+                    <li><span class="text-gray-400">Coaches & Reception:</span> <strong class="text-white">5:30 AM – 10:30 PM</strong></li>
+                    <li><span class="text-gray-400">Contrast Therapy Suites:</span> <strong class="text-white">6:00 AM – 10:00 PM</strong></li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Contact & WhatsApp Item -->
+              <div class="flex items-start gap-3.5 border-t border-[#1c222c] pt-5">
+                <div class="w-10 h-10 rounded-xl bg-[#25D366]/10 border border-[#25D366]/30 text-[#25D366] flex items-center justify-center shrink-0 mt-0.5">
+                  <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.694.062-2.127-.532-1.782-.74-2.91-2.544-2.999-2.663-.088-.119-.714-.951-.714-1.815 0-.864.453-1.289.614-1.464.161-.176.353-.22.47-.22.12 0 .237.002.341.007.11.006.257-.042.403.31.15.358.513 1.25.558 1.34.045.09.076.196.015.316-.06.12-.09.195-.181.301-.09.106-.188.236-.269.317-.09.09-.184.188-.079.369.106.18.471.776 1.011 1.257.697.621 1.285.814 1.465.904.18.091.286.076.392-.046.106-.12.451-.527.572-.708.12-.18.241-.15.405-.09.166.06 1.054.497 1.235.588.181.09.301.135.346.211.045.075.045.437-.099.842z"/></svg>
+                </div>
+                <div>
+                  <h4 class="font-bold text-white text-sm mb-1 uppercase tracking-wide">Direct Line & WhatsApp</h4>
+                  <p class="text-xs text-gray-300">
+                    Desk: <strong class="text-white">+91 80 4920 APEX</strong><br>
+                    WhatsApp: <strong class="text-[#25D366]">+91 98765 43210</strong>
+                  </p>
+                </div>
+              </div>
+
+              <!-- Amenities Pills -->
+              <div class="flex flex-wrap gap-2 pt-2">
+                <span class="px-2.5 py-1 rounded-lg bg-[#191d26] border border-[#272e3d] text-[11px] text-gray-300">
+                  🚗 Free Valet Parking
+                </span>
+                <span class="px-2.5 py-1 rounded-lg bg-[#191d26] border border-[#272e3d] text-[11px] text-gray-300">
+                  🚇 Metro Accessible
+                </span>
+                <span class="px-2.5 py-1 rounded-lg bg-[#191d26] border border-[#272e3d] text-[11px] text-gray-300">
+                  📶 High-Speed WiFi
+                </span>
+                <span class="px-2.5 py-1 rounded-lg bg-[#191d26] border border-[#272e3d] text-[11px] text-gray-300">
+                  ☕ Fuel Shake Bar
+                </span>
+              </div>
+
+            </div>
+
+            <!-- Direct Contact Button -->
+            <a 
+              href="https://wa.me/919876543210?text=Hi%20APEX%20Performance!%20I'm%20planning%20to%20visit%20the%20Indiranagar%20club%20today." 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              class="touch-btn w-full py-3.5 mt-6 bg-[#25D366] hover:bg-[#20ba59] text-black font-extrabold text-xs uppercase tracking-wider rounded-xl transition-all flex items-center justify-center gap-2"
+            >
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.694.062-2.127-.532-1.782-.74-2.91-2.544-2.999-2.663-.088-.119-.714-.951-.714-1.815 0-.864.453-1.289.614-1.464.161-.176.353-.22.47-.22.12 0 .237.002.341.007.11.006.257-.042.403.31.15.358.513 1.25.558 1.34.045.09.076.196.015.316-.06.12-.09.195-.181.301-.09.106-.188.236-.269.317-.09.09-.184.188-.079.369.106.18.471.776 1.011 1.257.697.621 1.285.814 1.465.904.18.091.286.076.392-.046.106-.12.451-.527.572-.708.12-.18.241-.15.405-.09.166.06 1.054.497 1.235.588.181.09.301.135.346.211.045.075.045.437-.099.842z"/></svg>
+              <span>Schedule Walkthrough on WhatsApp</span>
+            </a>
+          </div>
+
+          <!-- Interactive Google Maps Frame (Right 7 Cols) -->
+          <div class="lg:col-span-7 bg-[#12151b] border border-[#232936] rounded-3xl p-3 sm:p-4 flex flex-col justify-between">
+            <div class="relative w-full h-[320px] sm:h-[400px] lg:h-full min-h-[320px] rounded-2xl overflow-hidden map-container">
+              <!-- Embedded Google Map -->
+              <iframe 
+                title="APEX PERFORMANCE Indiranagar Location"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.9855523455146!2d77.63853107507647!3d12.972778887342618!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae16a6230f699f%3A0x6b4458f4a1bb3d2b!2s100%20Feet%20Rd%2C%20Indiranagar%2C%20Bengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" 
+                width="100%" 
+                height="100%" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade"
+                class="w-full h-full filter contrast-125 brightness-90 hover:brightness-100 transition-all duration-300"
+              ></iframe>
+
+              <!-- Map Overlay Badge -->
+              <div class="absolute top-4 left-4 bg-black/85 backdrop-blur-md px-3.5 py-2 rounded-xl border border-[#232936] flex items-center gap-2.5 shadow-xl">
+                <span class="w-2.5 h-2.5 rounded-full bg-[#ccff00] animate-ping"></span>
+                <div>
+                  <span class="text-xs font-bold text-white block">APEX PERFORMANCE Flagship</span>
+                  <span class="text-[10px] text-gray-400">Indiranagar 100 Ft Rd • Open 24/7</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Map Footer Bar -->
+            <div class="flex flex-col sm:flex-row items-center justify-between gap-3 pt-3 px-2 text-xs text-gray-400">
+              <span class="text-center sm:text-left">⚡ Tap map to zoom, explore neighborhood, or calculate commute time</span>
+              <a 
+                href="https://maps.google.com/?q=100+Feet+Road+Indiranagar+Bengaluru" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                class="text-[#ccff00] hover:underline font-bold flex items-center gap-1 shrink-0"
+              >
+                <span>Open Full Google Maps</span>
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- INSTAGRAM SHOWCASE & ATHLETIC COMMUNITY -->
+    <section id="instagram" class="py-16 bg-[#090a0d] border-t border-[#1c222c]">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between mb-8 gap-4">
+          <div class="flex items-center gap-3">
+            <div class="w-12 h-12 rounded-2xl insta-gradient p-0.5 flex items-center justify-center shadow-lg shadow-pink-500/20">
+              <div class="w-full h-full bg-[#090a0d] rounded-2xl flex items-center justify-center">
+                <svg class="w-6 h-6 text-[#E1306C]" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                </svg>
+              </div>
+            </div>
+            <div>
+              <div class="flex items-center gap-2">
+                <span class="font-display text-2xl sm:text-3xl text-white tracking-wide">@APEXPERFORMANCE.IN</span>
+                <span class="px-2 py-0.5 rounded-full bg-pink-500/20 text-pink-400 text-[10px] font-bold">54.2K Athletes</span>
+              </div>
+              <p class="text-xs text-gray-400">Daily PR highlights, coach programming cues, and behind-the-scenes recovery.</p>
+            </div>
+          </div>
+
+          <a 
+            href="https://instagram.com/apexperformance.in" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            class="touch-btn px-5 py-2.5 rounded-xl insta-gradient text-white font-extrabold text-xs uppercase tracking-wider transition-all hover:scale-105 flex items-center gap-2 shadow-lg shadow-pink-500/25"
+          >
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            <span>Follow on Instagram</span>
+          </a>
+        </div>
+
+        <!-- 4-Grid Community Visuals with Instagram Cues -->
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
+          
+          <a href="https://instagram.com/apexperformance.in" target="_blank" rel="noopener noreferrer" class="group relative rounded-2xl overflow-hidden aspect-square border border-[#232936] block">
+            <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?q=80&w=600&auto=format&fit=crop" alt="Apex Olympic Training" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 brightness-90">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex flex-col justify-end p-3.5">
+              <span class="text-[10px] text-[#ccff00] font-bold">#BarbellLab</span>
+              <span class="text-xs text-white font-semibold">220kg Deadlift PR Night</span>
+            </div>
+          </a>
+
+          <a href="https://instagram.com/apexperformance.in" target="_blank" rel="noopener noreferrer" class="group relative rounded-2xl overflow-hidden aspect-square border border-[#232936] block">
+            <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=600&auto=format&fit=crop" alt="Apex Contrast Therapy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 brightness-90">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex flex-col justify-end p-3.5">
+              <span class="text-[10px] text-cyan-300 font-bold">#ContrastTherapy</span>
+              <span class="text-xs text-white font-semibold">3.8°C Ice Plunge Session</span>
+            </div>
+          </a>
+
+          <a href="https://instagram.com/apexperformance.in" target="_blank" rel="noopener noreferrer" class="group relative rounded-2xl overflow-hidden aspect-square border border-[#232936] block">
+            <img src="https://images.unsplash.com/photo-1594381898411-846e7d193883?q=80&w=600&auto=format&fit=crop" alt="Apex Combat Boxing" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 brightness-90">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex flex-col justify-end p-3.5">
+              <span class="text-[10px] text-[#ff4d00] font-bold">#ApexCombat</span>
+              <span class="text-xs text-white font-semibold">Friday Night Fight Club</span>
+            </div>
+          </a>
+
+          <a href="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=600&auto=format&fit=crop" target="_blank" rel="noopener noreferrer" class="group relative rounded-2xl overflow-hidden aspect-square border border-[#232936] block">
+            <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=600&auto=format&fit=crop" alt="Apex Floor" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 brightness-90">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex flex-col justify-end p-3.5">
+              <span class="text-[10px] text-[#ccff00] font-bold">#BengaluruFitness</span>
+              <span class="text-xs text-white font-semibold">100 Ft Rd Community</span>
+            </div>
+          </a>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- INTERACTIVE FAQ ACCORDION -->
+    <section id="faq" class="py-20 bg-[#0b0d11] border-t border-[#1c222c]">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6">
+        
+        <div class="text-center mb-12">
+          <span class="inline-block px-3 py-1 rounded-full bg-[#161a22] border border-[#232936] text-[11px] font-bold text-[#ccff00] uppercase tracking-wider mb-2">
+            Clear Answers
+          </span>
+          <h2 class="font-display text-4xl sm:text-5xl text-white tracking-wide uppercase">
+            Frequently Asked Questions
+          </h2>
+          <p class="text-sm text-gray-400 mt-2">
+            Everything you need to know about our club policies, facilities, and trial passes.
+          </p>
+        </div>
+
+        <div class="space-y-4">
+          
+          <!-- FAQ 1 -->
+          <div class="bg-[#12151b] border border-[#232936] rounded-2xl overflow-hidden transition-all">
+            <button 
+              type="button" 
+              class="faq-item-trigger w-full px-6 py-5 text-left flex items-center justify-between gap-4 font-accent text-base font-bold text-white hover:text-[#ccff00] transition-colors"
+              aria-expanded="false"
+            >
+              <span>How does the 3-Day Free VIP Pass work?</span>
+              <svg class="faq-chevron w-5 h-5 text-gray-400 transition-transform duration-300 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+              </svg>
+            </button>
+            <div class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out px-6 text-xs text-gray-400 leading-relaxed">
+              <div class="pb-5 border-t border-[#1c222c] pt-3">
+                Your 3-Day Free Pass gives you unrestricted access to our main weight floor, Olympic lifting platforms, all group fitness classes, and one complimentary session in our contrast therapy cold plunge. No credit card is required to claim your pass.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 2 -->
+          <div class="bg-[#12151b] border border-[#232936] rounded-2xl overflow-hidden transition-all">
+            <button 
+              type="button" 
+              class="faq-item-trigger w-full px-6 py-5 text-left flex items-center justify-between gap-4 font-accent text-base font-bold text-white hover:text-[#ccff00] transition-colors"
+              aria-expanded="false"
+            >
+              <span>What are the gym hours and peak floor times?</span>
+              <svg class="faq-chevron w-5 h-5 text-gray-400 transition-transform duration-300 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+              </svg>
+            </button>
+            <div class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out px-6 text-xs text-gray-400 leading-relaxed">
+              <div class="pb-5 border-t border-[#1c222c] pt-3">
+                APEX is open 24 hours a day, 7 days a week, 365 days a year via biometric facial recognition and smartphone Bluetooth keycard. Front desk staff and certified coaches are on duty from 5:30 AM to 10:00 PM daily. Peak hours are typically 6:00 PM to 8:00 PM.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 3 -->
+          <div class="bg-[#12151b] border border-[#232936] rounded-2xl overflow-hidden transition-all">
+            <button 
+              type="button" 
+              class="faq-item-trigger w-full px-6 py-5 text-left flex items-center justify-between gap-4 font-accent text-base font-bold text-white hover:text-[#ccff00] transition-colors"
+              aria-expanded="false"
+            >
+              <span>Can I freeze or cancel my membership without penalty?</span>
+              <svg class="faq-chevron w-5 h-5 text-gray-400 transition-transform duration-300 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+              </svg>
+            </button>
+            <div class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out px-6 text-xs text-gray-400 leading-relaxed">
+              <div class="pb-5 border-t border-[#1c222c] pt-3">
+                Yes. We believe in earning your loyalty every month. Monthly memberships can be frozen for up to 90 days or cancelled anytime through your member dashboard with 14 days digital notice. Zero cancellation fees.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 4 -->
+          <div class="bg-[#12151b] border border-[#232936] rounded-2xl overflow-hidden transition-all">
+            <button 
+              type="button" 
+              class="faq-item-trigger w-full px-6 py-5 text-left flex items-center justify-between gap-4 font-accent text-base font-bold text-white hover:text-[#ccff00] transition-colors"
+              aria-expanded="false"
+            >
+              <span>Are beginners welcome in the Olympic and Boxing classes?</span>
+              <svg class="faq-chevron w-5 h-5 text-gray-400 transition-transform duration-300 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+              </svg>
+            </button>
+            <div class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out px-6 text-xs text-gray-400 leading-relaxed">
+              <div class="pb-5 border-t border-[#1c222c] pt-3">
+                Absolutely. Every coach is trained to provide scaled regressions for all movements. If you have never touched a barbell or thrown a punch, our coaches will guide you through footwork and empty PVC pipe mechanics before adding weight.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 5 -->
+          <div class="bg-[#12151b] border border-[#232936] rounded-2xl overflow-hidden transition-all">
+            <button 
+              type="button" 
+              class="faq-item-trigger w-full px-6 py-5 text-left flex items-center justify-between gap-4 font-accent text-base font-bold text-white hover:text-[#ccff00] transition-colors"
+              aria-expanded="false"
+            >
+              <span>What hygiene and cold plunge protocols are followed?</span>
+              <svg class="faq-chevron w-5 h-5 text-gray-400 transition-transform duration-300 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+              </svg>
+            </button>
+            <div class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out px-6 text-xs text-gray-400 leading-relaxed">
+              <div class="pb-5 border-t border-[#1c222c] pt-3">
+                Our cold plunge tubs use medical-grade 5-micron filtration, continuous UV sterilization, and commercial ozone treatment that recycles 100% of the water every 12 minutes. Showers are mandatory before stepping into the contrast plunge.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 6: Locker Facilities -->
+          <div class="bg-[#12151b] border border-[#232936] rounded-2xl overflow-hidden transition-all">
+            <button 
+              type="button" 
+              class="faq-item-trigger w-full px-6 py-5 text-left flex items-center justify-between gap-4 font-accent text-base font-bold text-white hover:text-[#ccff00] transition-colors"
+              aria-expanded="false"
+            >
+              <span>What locker facilities, executive showers, and amenities are provided?</span>
+              <svg class="faq-chevron w-5 h-5 text-gray-400 transition-transform duration-300 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+              </svg>
+            </button>
+            <div class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out px-6 text-xs text-gray-400 leading-relaxed">
+              <div class="pb-5 border-t border-[#1c222c] pt-3">
+                Every member has full access to digital biometric keyless lockers, individual rainfall executive shower suites, eucalyptus-infused steam rooms, and Finnish cedar saunas. We provide complimentary plush bath and sweat towels, Dyson Supersonic hair dryers, and Malin+Goetz grooming essentials.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 7: Personal Training -->
+          <div class="bg-[#12151b] border border-[#232936] rounded-2xl overflow-hidden transition-all">
+            <button 
+              type="button" 
+              class="faq-item-trigger w-full px-6 py-5 text-left flex items-center justify-between gap-4 font-accent text-base font-bold text-white hover:text-[#ccff00] transition-colors"
+              aria-expanded="false"
+            >
+              <span>How does Personal Training and 1-on-1 coach matching work?</span>
+              <svg class="faq-chevron w-5 h-5 text-gray-400 transition-transform duration-300 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+              </svg>
+            </button>
+            <div class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out px-6 text-xs text-gray-400 leading-relaxed">
+              <div class="pb-5 border-t border-[#1c222c] pt-3">
+                All personal training at APEX begins with a 60-minute Comprehensive Athletic Assessment (mobility screening, kinetic force output test, and nutritional consultation). You are paired with a coach specialized in your specific goals (Olympic weightlifting, boxing, or metabolic conditioning) with tailored periodization programs.
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-[#07080b] border-t border-[#181d26] py-14 text-xs text-gray-400">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+        
+        <div class="space-y-4">
+          <div class="flex items-center gap-2">
+            <div class="w-8 h-8 rounded-lg bg-[#ccff00] flex items-center justify-center text-black font-extrabold text-sm">
+              ⚡
+            </div>
+            <span class="font-display text-2xl text-white tracking-wider">APEX <span class="text-[#ccff00]">PERFORMANCE</span></span>
+          </div>
+          <p class="text-xs text-gray-400 leading-relaxed">
+            The premier dark athletic facility built for those who refuse average. Olympic lifting, high-threshold conditioning, and scientific contrast recovery.
+          </p>
+          <div class="text-[11px] text-gray-500">
+            © 2026 APEX Performance LLC. All rights reserved.
+          </div>
+        </div>
+
+        <div>
+          <h4 class="font-bold text-white uppercase tracking-wider mb-3">Flagship Location</h4>
+          <p class="text-gray-400 leading-relaxed">
+            APEX PERFORMANCE Flagship Hub<br>
+            Plot 148, 100 Feet Road, HAL 2nd Stage,<br>
+            Indiranagar, Bengaluru, Karnataka 560038<br>
+            Opp. Metro Pillar 78 • Open 24/7/365
+          </p>
+          <div class="mt-2.5 space-y-1">
+            <p class="text-[#ccff00] font-semibold">Desk: +91 80 4920 APEX</p>
+            <a href="https://wa.me/919876543210" target="_blank" rel="noopener noreferrer" class="text-[#25D366] hover:underline font-semibold flex items-center gap-1">
+              <span>WhatsApp: +91 98765 43210</span>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="font-bold text-white uppercase tracking-wider mb-3">Disciplines & Suites</h4>
+          <ul class="space-y-2">
+            <li><a href="#classes" class="hover:text-[#ccff00] transition-colors">Hyper-MetCon 500</a></li>
+            <li><a href="#classes" class="hover:text-[#ccff00] transition-colors">Olympic Barbell Lab</a></li>
+            <li><a href="#classes" class="hover:text-[#ccff00] transition-colors">Combat Muay Thai</a></li>
+            <li><a href="#amenities" class="hover:text-[#ccff00] transition-colors">Contrast Ice & Sauna</a></li>
+            <li><a href="#location" class="hover:text-[#ccff00] transition-colors">Indiranagar Map & Parking</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-bold text-white uppercase tracking-wider mb-3">Connect on Instagram</h4>
+          <p class="text-gray-400 mb-3">Join 54,000+ athletes following our daily programming and PR board.</p>
+          <a 
+            href="https://instagram.com/apexperformance.in" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            class="touch-btn w-full py-2.5 rounded-xl insta-gradient text-white font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-2 mb-3 shadow-md"
+          >
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            <span>@apexperformance.in</span>
+          </a>
+        </div>
+
+      </div>
+
+      <div class="border-t border-[#151921] pt-6 flex flex-col sm:flex-row items-center justify-between text-[11px] text-gray-500 gap-4">
+        <div>Safety Protocol Certified • Equal Access Athlete Gym • Clean Sport Standards • Bengaluru, India</div>
+        <div class="flex items-center gap-4">
+          <a href="#" class="hover:text-gray-300">Privacy Policy</a>
+          <a href="#" class="hover:text-gray-300">Terms of Membership</a>
+          <a href="https://instagram.com/apexperformance.in" target="_blank" class="hover:text-pink-400">Instagram</a>
+          <a href="https://wa.me/919876543210" target="_blank" class="hover:text-[#25D366]">WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING WHATSAPP CHAT BUTTON (DUAL ACTION ON MOBILE, UNCLUTTERED DESKTOP) -->
+  <a 
+    href="https://wa.me/919876543210?text=Hi%20APEX%20Performance!%20I'm%20interested%20in%20memberships%20and%20claiming%20a%20free%20VIP%20pass." 
+    target="_blank" 
+    rel="noopener noreferrer" 
+    class="whatsapp-float whatsapp-pulse px-3.5 py-3 sm:px-4 sm:py-2.5 flex items-center gap-2 border-2 border-white/20"
+    title="Chat with APEX on WhatsApp"
+    aria-label="Chat with APEX on WhatsApp"
+  >
+    <svg class="w-6 h-6 fill-current text-white shrink-0" viewBox="0 0 24 24">
+      <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.694.062-2.127-.532-1.782-.74-2.91-2.544-2.999-2.663-.088-.119-.714-.951-.714-1.815 0-.864.453-1.289.614-1.464.161-.176.353-.22.47-.22.12 0 .237.002.341.007.11.006.257-.042.403.31.15.358.513 1.25.558 1.34.045.09.076.196.015.316-.06.12-.09.195-.181.301-.09.106-.188.236-.269.317-.09.09-.184.188-.079.369.106.18.471.776 1.011 1.257.697.621 1.285.814 1.465.904.18.091.286.076.392-.046.106-.12.451-.527.572-.708.12-.18.241-.15.405-.09.166.06 1.054.497 1.235.588.181.09.301.135.346.211.045.075.045.437-.099.842z"/>
+    </svg>
+    <span class="hidden sm:inline text-xs font-bold uppercase tracking-wider text-white font-sans">Chat on WhatsApp</span>
+  </a>
+
+  <!-- STICKY FLOATING ACTION BUTTON (MOBILE ONLY - ANCHORED RIGHT WITHOUT OVERLAP) -->
+  <div class="mobile-sticky-pass">
+    <button 
+      data-open-modal="pass"
+      class="touch-btn px-4 py-3 bg-[#ccff00] hover:bg-[#b8e600] text-black font-extrabold text-xs uppercase tracking-wider rounded-full shadow-2xl volt-glow-strong flex items-center gap-1.5 border-2 border-black"
+    >
+      <span class="w-2 h-2 rounded-full bg-black animate-ping"></span>
+      <span>⚡ Claim 1-Day Free Pass</span>
+    </button>
+  </div>
+
+  <!-- BOTTOM MOBILE NAVIGATION BAR (Touch Targets >= 44px, Perfect Mobile Ratio) -->
+  <nav class="lg:hidden fixed bottom-0 left-0 right-0 z-40 bg-[#090a0d]/95 backdrop-blur-xl border-t border-[#1c222c] px-2 py-1.5 flex items-center justify-around h-14">
+    
+    <a href="#hero" data-section="hero" class="mobile-nav-item flex flex-col items-center justify-center min-w-[50px] min-h-[44px] text-gray-400 hover:text-white transition-colors">
+      <svg class="w-4 h-4 mb-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/>
+      </svg>
+      <span class="text-[9px] font-bold uppercase tracking-wider">Home</span>
+    </a>
+
+    <a href="#classes" data-section="classes" class="mobile-nav-item flex flex-col items-center justify-center min-w-[50px] min-h-[44px] text-gray-400 hover:text-white transition-colors">
+      <svg class="w-4 h-4 mb-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+      </svg>
+      <span class="text-[9px] font-bold uppercase tracking-wider">Classes</span>
+    </a>
+
+    <a href="#trainers" data-section="trainers" class="mobile-nav-item flex flex-col items-center justify-center min-w-[50px] min-h-[44px] text-gray-400 hover:text-white transition-colors">
+      <svg class="w-4 h-4 mb-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
+      </svg>
+      <span class="text-[9px] font-bold uppercase tracking-wider">Trainers</span>
+    </a>
+
+    <a href="#pricing" data-section="pricing" class="mobile-nav-item flex flex-col items-center justify-center min-w-[50px] min-h-[44px] text-gray-400 hover:text-white transition-colors">
+      <svg class="w-4 h-4 mb-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+      </svg>
+      <span class="text-[9px] font-bold uppercase tracking-wider">Pricing</span>
+    </a>
+
+    <button type="button" onclick="openModal('pass')" class="mobile-nav-item flex flex-col items-center justify-center min-w-[54px] min-h-[44px] text-[#ccff00] hover:text-white transition-colors">
+      <div class="w-6 h-6 rounded-full bg-[#ccff00] text-black flex items-center justify-center font-bold text-xs mb-0.5 shadow-md shadow-[#ccff00]/30">
+        <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24">
+          <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+        </svg>
+      </div>
+      <span class="text-[9px] font-extrabold uppercase tracking-wider text-[#ccff00]">Join Now</span>
+    </button>
+
+  </nav>
+
+  <!-- ACCESSIBLE INTERACTIVE MODAL (FREE PASS / CLASS / MEMBERSHIP LEAD CAPTURE) -->
+  <div id="action-modal-backdrop" class="modal-backdrop fixed inset-0 z-50 bg-black/80 backdrop-blur-md flex items-center justify-center p-4">
+    <div class="modal-content-panel relative w-full max-w-lg bg-[#12151b] border border-[#2a3243] rounded-3xl p-6 sm:p-8 shadow-2xl volt-glow">
+      
+      <!-- Close Button -->
+      <button 
+        id="modal-close-btn"
+        class="touch-btn absolute top-5 right-5 w-8 h-8 rounded-full bg-[#1b202a] text-gray-400 hover:text-white hover:bg-gray-800 transition-all flex items-center justify-center"
+        aria-label="Close dialog"
+      >
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+        </svg>
+      </button>
+
+      <!-- VIEW 1: LEAD CAPTURE FORM -->
+      <div id="modal-form-view">
+        <span id="modal-context-badge" class="inline-block text-[11px] font-bold uppercase tracking-wider text-[#ccff00] mb-1">
+          ⚡ 100% Free • Zero Credit Card Required
+        </span>
+
+        <h3 id="modal-title" class="font-display text-3xl sm:text-4xl text-white uppercase tracking-wide mb-1">
+          Claim 3-Day VIP Access Pass
+        </h3>
+
+        <p id="modal-subtitle" class="text-xs text-gray-400 mb-5">
+          Experience our Olympic lifting racks, recovery suites, and high-energy classes on us.
+        </p>
+
+        <!-- Dynamic Context Box (for preselected class/trainer/plan) -->
+        <div id="modal-context-details" class="mb-5 hidden"></div>
+
+        <form id="apex-lead-form" class="space-y-4">
+          <input type="hidden" id="hidden-class-id" value="">
+
+          <div>
+            <label class="block text-xs font-semibold text-gray-300 uppercase tracking-wider mb-1.5">Full Name *</label>
+            <input 
+              type="text" 
+              id="modal-input-name" 
+              required 
+              placeholder="e.g. Alex Hunter" 
+              class="w-full bg-[#0b0e14] border border-[#242b3a] rounded-xl px-4 py-3 text-sm text-white placeholder-gray-600 focus:outline-none focus:border-[#ccff00] transition-colors"
+            />
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-xs font-semibold text-gray-300 uppercase tracking-wider mb-1.5">Email Address *</label>
+              <input 
+                type="email" 
+                id="modal-input-email" 
+                required 
+                placeholder="alex@domain.com" 
+                class="w-full bg-[#0b0e14] border border-[#242b3a] rounded-xl px-4 py-3 text-sm text-white placeholder-gray-600 focus:outline-none focus:border-[#ccff00] transition-colors"
+              />
+            </div>
+            <div>
+              <label class="block text-xs font-semibold text-gray-300 uppercase tracking-wider mb-1.5">Phone Number *</label>
+              <input 
+                type="tel" 
+                id="modal-input-phone" 
+                required 
+                placeholder="(555) 019-2834" 
+                class="w-full bg-[#0b0e14] border border-[#242b3a] rounded-xl px-4 py-3 text-sm text-white placeholder-gray-600 focus:outline-none focus:border-[#ccff00] transition-colors"
+              />
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-xs font-semibold text-gray-300 uppercase tracking-wider mb-1.5">Preferred Time Window</label>
+              <select class="w-full bg-[#0b0e14] border border-[#242b3a] rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-[#ccff00] transition-colors">
+                <option>Early Morning (6 AM - 9 AM)</option>
+                <option>Mid-Day (11 AM - 2 PM)</option>
+                <option selected>Evening Peak (5 PM - 8 PM)</option>
+                <option>Night Owl (9 PM - Midnight)</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-xs font-semibold text-gray-300 uppercase tracking-wider mb-1.5">Primary Fitness Focus</label>
+              <select class="w-full bg-[#0b0e14] border border-[#242b3a] rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-[#ccff00] transition-colors">
+                <option>Olympic Lifting & Heavy Strength</option>
+                <option>HIIT & Hyrox Conditioning</option>
+                <option>Combat Striking & Boxing</option>
+                <option>Contrast Therapy & Ice Recovery</option>
+                <option>General Body Recomposition</option>
+              </select>
+            </div>
+          </div>
+
+          <button 
+            type="submit" 
+            class="touch-btn w-full py-4 mt-2 bg-[#ccff00] hover:bg-[#b8e600] text-black font-extrabold text-xs uppercase tracking-wider rounded-xl volt-glow transition-all hover:scale-102"
+          >
+            Confirm & Generate Pass
+          </button>
+
+          <p class="text-[10px] text-gray-500 text-center">
+            By submitting, you agree to receive digital pass confirmation. No spam, ever.
+          </p>
+        </form>
+      </div>
+
+      <!-- VIEW 2: SUCCESS / PASS CONFIRMATION VOUCHER -->
+      <div id="modal-success-view" class="hidden text-center py-4">
+        <div class="w-16 h-16 rounded-full bg-[#ccff00]/10 border-2 border-[#ccff00] flex items-center justify-center mx-auto mb-4 text-[#ccff00] volt-glow">
+          <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/>
+          </svg>
+        </div>
+
+        <h3 class="font-display text-4xl text-white uppercase tracking-wide mb-1">
+          Access Granted!
+        </h3>
+        <p class="text-xs text-gray-300 mb-6">
+          Welcome to APEX PERFORMANCE, <span id="success-user-name" class="font-bold text-[#ccff00]">Athlete</span>.
+        </p>
+
+        <!-- Simulated Pass Card -->
+        <div class="bg-[#0b0e14] border border-[#2a3344] rounded-2xl p-5 mb-6 text-left relative overflow-hidden">
+          <div class="flex items-center justify-between border-b border-[#1c222c] pb-3 mb-3">
+            <div>
+              <span class="text-[9px] uppercase tracking-widest text-gray-500 block">Pass Identifier</span>
+              <span id="pass-code-display" class="font-mono font-bold text-lg text-[#ccff00]">APEX-PASS-8842</span>
+            </div>
+            <span class="px-2 py-1 rounded bg-emerald-500/20 text-emerald-400 font-bold text-[10px] uppercase">Active</span>
+          </div>
+
+          <div class="text-xs text-gray-300 space-y-1 mb-3">
+            <div><span class="text-gray-500">Member:</span> <span id="success-user-email">email@domain.com</span></div>
+            <div><span class="text-gray-500">Location:</span> 742 Velocity Blvd (Main Floor Turnstile)</div>
+            <div><span class="text-gray-500">Validity:</span> 3 Consecutive Days from 1st scan</div>
+          </div>
+
+          <!-- Mock QR barcode graphic -->
+          <div class="bg-[#181d26] p-3 rounded-xl flex items-center justify-center gap-1.5 h-12">
+            <div class="w-1.5 h-8 bg-white"></div>
+            <div class="w-0.5 h-8 bg-white"></div>
+            <div class="w-3 h-8 bg-[#ccff00]"></div>
+            <div class="w-1 h-8 bg-white"></div>
+            <div class="w-2 h-8 bg-white"></div>
+            <div class="w-0.5 h-8 bg-white"></div>
+            <div class="w-2 h-8 bg-[#ccff00]"></div>
+            <div class="w-1.5 h-8 bg-white"></div>
+            <div class="w-3 h-8 bg-white"></div>
+            <div class="w-0.5 h-8 bg-white"></div>
+            <div class="w-1.5 h-8 bg-[#ccff00]"></div>
+          </div>
+        </div>
+
+        <button 
+          onclick="closeModal()" 
+          class="touch-btn w-full py-3.5 bg-[#ccff00] text-black font-extrabold text-xs uppercase tracking-wider rounded-xl volt-glow"
+        >
+          Done & Close
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICATION CONTAINER -->
+  <div id="toast-container" class="fixed top-6 right-6 z-50 flex flex-col gap-3 pointer-events-none max-w-sm w-full px-4"></div>
+
+  <!-- MAIN SCRIPT -->
+  <script>
+/**
+ * APEX PERFORMANCE - Modern Gym & Fitness Club Web Application
+ * Core Interactive Logic & State Management
+ */
+
+// --- 1. MOCK DATA: CLASSES & SCHEDULE ---
+const SCHEDULE_DATA = [
+  // Monday
+  {
+    id: 'm1',
+    day: 'mon',
+    title: 'HYPER-METCON 500',
+    category: 'hiit',
+    time: '06:00 AM - 06:45 AM',
+    duration: '45 mins',
+    instructor: 'David Chen',
+    intensity: 5,
+    studio: 'Studio A • The Arena',
+    spotsTotal: 18,
+    spotsLeft: 3,
+    tag: 'High Calorie Burn'
+  },
+  {
+    id: 'm2',
+    day: 'mon',
+    title: 'OLYMPIC BARBELL LAB',
+    category: 'strength',
+    time: '07:30 AM - 08:30 AM',
+    duration: '60 mins',
+    instructor: 'Marcus Vance',
+    intensity: 5,
+    studio: 'Main Weight Floor',
+    spotsTotal: 12,
+    spotsLeft: 5,
+    tag: 'Heavy Lifting'
+  },
+  {
+    id: 'm3',
+    day: 'mon',
+    title: 'STRIKING & COMBAT CONDITIONING',
+    category: 'boxing',
+    time: '12:00 PM - 12:50 PM',
+    duration: '50 mins',
+    instructor: 'Elena Rostova',
+    intensity: 4,
+    studio: 'Combat Ring & Bags',
+    spotsTotal: 16,
+    spotsLeft: 4,
+    tag: 'Punches & Core'
+  },
+  {
+    id: 'm4',
+    day: 'mon',
+    title: 'ATHLETIC MOBILITY & RECOVERY',
+    category: 'yoga',
+    time: '06:30 PM - 07:30 PM',
+    duration: '60 mins',
+    instructor: 'Maya Brooks',
+    intensity: 2,
+    studio: 'Studio B • Zen Vault',
+    spotsTotal: 20,
+    spotsLeft: 8,
+    tag: 'Decompress & Restore'
+  },
+  {
+    id: 'm5',
+    day: 'mon',
+    title: 'CROSS-ENGINE WOD',
+    category: 'crossfit',
+    time: '07:45 PM - 08:45 PM',
+    duration: '60 mins',
+    instructor: 'David Chen',
+    intensity: 5,
+    studio: 'Turf & Rig Zone',
+    spotsTotal: 15,
+    spotsLeft: 2,
+    tag: 'Team Challenge'
+  },
+
+  // Tuesday
+  {
+    id: 't1',
+    day: 'tue',
+    title: 'PURE DEADLIFT & SQUAT PROTOCOL',
+    category: 'strength',
+    time: '06:30 AM - 07:30 AM',
+    duration: '60 mins',
+    instructor: 'Marcus Vance',
+    intensity: 5,
+    studio: 'Power Racks Alley',
+    spotsTotal: 10,
+    spotsLeft: 1,
+    tag: 'Max Strength'
+  },
+  {
+    id: 't2',
+    day: 'tue',
+    title: 'BOXING FOOTWORK & MITT WORK',
+    category: 'boxing',
+    time: '09:00 AM - 10:00 AM',
+    duration: '60 mins',
+    instructor: 'Elena Rostova',
+    intensity: 4,
+    studio: 'Combat Ring & Bags',
+    spotsTotal: 14,
+    spotsLeft: 6,
+    tag: 'Technical Skills'
+  },
+  {
+    id: 't3',
+    day: 'tue',
+    title: 'TABATA INFERNO',
+    category: 'hiit',
+    time: '05:30 PM - 06:15 PM',
+    duration: '45 mins',
+    instructor: 'David Chen',
+    intensity: 5,
+    studio: 'Studio A • The Arena',
+    spotsTotal: 20,
+    spotsLeft: 7,
+    tag: 'Cardio Engine'
+  },
+  {
+    id: 't4',
+    day: 'tue',
+    title: 'POWER VINYASA FLOW',
+    category: 'yoga',
+    time: '07:00 PM - 08:00 PM',
+    duration: '60 mins',
+    instructor: 'Maya Brooks',
+    intensity: 3,
+    studio: 'Studio B • Zen Vault',
+    spotsTotal: 18,
+    spotsLeft: 5,
+    tag: 'Flexibility & Balance'
+  },
+
+  // Wednesday
+  {
+    id: 'w1',
+    day: 'wed',
+    title: 'HYROX RACE SIMULATION',
+    category: 'crossfit',
+    time: '06:00 AM - 07:15 AM',
+    duration: '75 mins',
+    instructor: 'David Chen',
+    intensity: 5,
+    studio: 'Turf & Rig Zone',
+    spotsTotal: 16,
+    spotsLeft: 3,
+    tag: 'Endurance Beast'
+  },
+  {
+    id: 'w2',
+    day: 'wed',
+    title: 'UPPER BODY HYPERTROPHY',
+    category: 'strength',
+    time: '12:00 PM - 01:00 PM',
+    duration: '60 mins',
+    instructor: 'Marcus Vance',
+    intensity: 4,
+    studio: 'Main Weight Floor',
+    spotsTotal: 14,
+    spotsLeft: 4,
+    tag: 'Muscle Hypertrophy'
+  },
+  {
+    id: 'w3',
+    day: 'wed',
+    title: 'MUAY THAI CLINCH & KICKS',
+    category: 'boxing',
+    time: '06:00 PM - 07:00 PM',
+    duration: '60 mins',
+    instructor: 'Elena Rostova',
+    intensity: 5,
+    studio: 'Combat Ring & Bags',
+    spotsTotal: 15,
+    spotsLeft: 3,
+    tag: 'Striking Power'
+  },
+  {
+    id: 'w4',
+    day: 'wed',
+    title: 'YIN YOGA & MYOFASCIAL RELEASE',
+    category: 'yoga',
+    time: '07:30 PM - 08:30 PM',
+    duration: '60 mins',
+    instructor: 'Maya Brooks',
+    intensity: 1,
+    studio: 'Studio B • Zen Vault',
+    spotsTotal: 22,
+    spotsLeft: 10,
+    tag: 'Deep Tissue Release'
+  },
+
+  // Thursday
+  {
+    id: 'th1',
+    day: 'thu',
+    title: 'PLYOMETRIC SPEED & AGILITY',
+    category: 'hiit',
+    time: '06:30 AM - 07:20 AM',
+    duration: '50 mins',
+    instructor: 'David Chen',
+    intensity: 4,
+    studio: 'Sprint Turf 40m',
+    spotsTotal: 18,
+    spotsLeft: 6,
+    tag: 'Explosive Power'
+  },
+  {
+    id: 'th2',
+    day: 'thu',
+    title: 'FUNCTIONAL POSTURE & SPINE LAB',
+    category: 'yoga',
+    time: '10:00 AM - 11:00 AM',
+    duration: '60 mins',
+    instructor: 'Maya Brooks',
+    intensity: 2,
+    studio: 'Studio B • Zen Vault',
+    spotsTotal: 16,
+    spotsLeft: 9,
+    tag: 'Injury Prevention'
+  },
+  {
+    id: 'th3',
+    day: 'thu',
+    title: 'PR BENCH & OVERHEAD PRESS',
+    category: 'strength',
+    time: '05:30 PM - 06:45 PM',
+    duration: '75 mins',
+    instructor: 'Marcus Vance',
+    intensity: 5,
+    studio: 'Power Racks Alley',
+    spotsTotal: 12,
+    spotsLeft: 2,
+    tag: 'Heavy Pressing'
+  },
+  {
+    id: 'th4',
+    day: 'thu',
+    title: 'KETTLEBELL FLOW & CORE',
+    category: 'crossfit',
+    time: '07:00 PM - 08:00 PM',
+    duration: '60 mins',
+    instructor: 'David Chen',
+    intensity: 4,
+    studio: 'Turf & Rig Zone',
+    spotsTotal: 16,
+    spotsLeft: 5,
+    tag: 'Rotational Strength'
+  },
+
+  // Friday
+  {
+    id: 'f1',
+    day: 'fri',
+    title: 'FASTED FRIDAY ASSAULT BIKE & ROW',
+    category: 'hiit',
+    time: '06:00 AM - 06:45 AM',
+    duration: '45 mins',
+    instructor: 'David Chen',
+    intensity: 5,
+    studio: 'Studio A • The Arena',
+    spotsTotal: 16,
+    spotsLeft: 2,
+    tag: 'Anaerobic Threshold'
+  },
+  {
+    id: 'f2',
+    day: 'fri',
+    title: 'FRIDAY NIGHT FIGHT CLUB (DRILLS)',
+    category: 'boxing',
+    time: '06:00 PM - 07:15 PM',
+    duration: '75 mins',
+    instructor: 'Elena Rostova',
+    intensity: 5,
+    studio: 'Combat Ring & Bags',
+    spotsTotal: 20,
+    spotsLeft: 4,
+    tag: 'High Energy Sparring'
+  },
+  {
+    id: 'f3',
+    day: 'fri',
+    title: 'TOTAL BODY COMPOUND LIFTING',
+    category: 'strength',
+    time: '07:30 PM - 08:30 PM',
+    duration: '60 mins',
+    instructor: 'Marcus Vance',
+    intensity: 4,
+    studio: 'Main Weight Floor',
+    spotsTotal: 14,
+    spotsLeft: 6,
+    tag: 'Full Body Density'
+  },
+
+  // Saturday
+  {
+    id: 'sa1',
+    day: 'sat',
+    title: 'WEEKEND WARRIOR COMMUNITY BATTLE',
+    category: 'crossfit',
+    time: '08:30 AM - 10:00 AM',
+    duration: '90 mins',
+    instructor: 'David Chen & Marcus Vance',
+    intensity: 5,
+    studio: 'All Turfs Combined',
+    spotsTotal: 30,
+    spotsLeft: 5,
+    tag: 'Partner WOD'
+  },
+  {
+    id: 'sa2',
+    day: 'sat',
+    title: 'GLUTE & POSTERIOR CHAIN MASTERY',
+    category: 'strength',
+    time: '10:30 AM - 11:30 AM',
+    duration: '60 mins',
+    instructor: 'Elena Rostova',
+    intensity: 4,
+    studio: 'Main Weight Floor',
+    spotsTotal: 16,
+    spotsLeft: 3,
+    tag: 'Targeted Glutes'
+  },
+  {
+    id: 'sa3',
+    day: 'sat',
+    title: 'CHILL & CHILL: ICE BATH + BREATHWORK',
+    category: 'yoga',
+    time: '12:00 PM - 01:15 PM',
+    duration: '75 mins',
+    instructor: 'Maya Brooks',
+    intensity: 2,
+    studio: 'Contrast Recovery Suite',
+    spotsTotal: 12,
+    spotsLeft: 1,
+    tag: 'Cold Plunge & Pranayama'
+  },
+
+  // Sunday
+  {
+    id: 'su1',
+    day: 'sun',
+    title: 'SUNDAY RECOVERY & SOUND BATH',
+    category: 'yoga',
+    time: '09:00 AM - 10:15 AM',
+    duration: '75 mins',
+    instructor: 'Maya Brooks',
+    intensity: 1,
+    studio: 'Studio B • Zen Vault',
+    spotsTotal: 25,
+    spotsLeft: 12,
+    tag: 'Nervous System Reset'
+  },
+  {
+    id: 'su2',
+    day: 'sun',
+    title: 'OPEN BARBELL & TECHNIQUE CLINIC',
+    category: 'strength',
+    time: '11:00 AM - 12:30 PM',
+    duration: '90 mins',
+    instructor: 'Marcus Vance',
+    intensity: 3,
+    studio: 'Power Racks Alley',
+    spotsTotal: 15,
+    spotsLeft: 7,
+    tag: 'Form Feedback'
+  },
+  {
+    id: 'su3',
+    day: 'sun',
+    title: 'SWEAT & SHRED ENGINE',
+    category: 'hiit',
+    time: '04:30 PM - 05:15 PM',
+    duration: '45 mins',
+    instructor: 'David Chen',
+    intensity: 4,
+    studio: 'Studio A • The Arena',
+    spotsTotal: 18,
+    spotsLeft: 8,
+    tag: 'Low Impact Cardio'
+  }
+];
+
+// --- 2. TRAINERS DATA ---
+const TRAINERS_DATA = [
+  {
+    id: 'marcus',
+    name: 'Marcus Vance',
+    nickname: 'The Barbell Architect',
+    role: 'Head of Strength & Olympic Performance',
+    creds: 'USAW Level 3 • CSCS • 14 Yrs Coaching',
+    specialty: 'Maximal Strength, Deadlift Mastery, Olympic Clean & Jerk',
+    bio: 'Former national Olympic weightlifting competitor with over a decade of turning athletes into raw strength juggernauts. Known for zero-compromise biomechanics.',
+    image: 'https://images.unsplash.com/photo-1567013127542-490d757e51fc?q=80&w=800&auto=format&fit=crop',
+    instagram: '@vance_strength',
+    tag: 'Strength'
+  },
+  {
+    id: 'elena',
+    name: 'Elena Rostova',
+    nickname: 'The Striking Specialist',
+    role: 'Head of Combat & Athletic Conditioning',
+    creds: 'Ex-Pro Muay Thai Champion • NASM-PES',
+    specialty: 'Muay Thai Striking, Explosive Agility, Kinetic Rotational Power',
+    bio: 'Champion combat athlete who blends authentic striking mechanics with high-threshold functional conditioning. Relentless energy and lethal precision.',
+    image: 'https://images.unsplash.com/photo-1594381898411-846e7d193883?q=80&w=800&auto=format&fit=crop',
+    instagram: '@rostova_strike',
+    tag: 'Boxing'
+  },
+  {
+    id: 'david',
+    name: 'David Chen',
+    nickname: 'The Engine',
+    role: 'Director of Hyrox & MetCon Programming',
+    creds: 'Hyrox Master Coach • CrossFit L-3 • Ironman',
+    specialty: 'VO2 Max Development, Lactate Shuttling, High-Volume Pacing',
+    bio: 'Ironman finisher and Hyrox world podium athlete. David builds bulletproof cardiorespiratory engines capable of sustaining maximum output under severe fatigue.',
+    image: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=800&auto=format&fit=crop',
+    instagram: '@chen_metcon',
+    tag: 'MetCon'
+  },
+  {
+    id: 'maya',
+    name: 'Maya Brooks',
+    nickname: 'The Zen Master',
+    role: 'Lead Functional Mobility & Breath Coach',
+    creds: '500-hr E-RYT • FRC Mobility Specialist • Oxygen Advantage',
+    specialty: 'Spine Decompression, Contrast Therapy, Nervous System Down-regulation',
+    bio: 'Bridges hard athletic training with scientific nervous system recovery. Keeps APEX powerlifters and fighters injury-free and functioning at 100% joint capacity.',
+    image: 'https://images.unsplash.com/photo-1517838277536-f5f99be501cd?q=80&w=800&auto=format&fit=crop',
+    instagram: '@maya_zenith',
+    tag: 'Mobility'
+  }
+];
+
+// --- 3. PRICING & CURRENCY DATA ---
+const PRICING_DATA = {
+  INR: {
+    symbol: '₹',
+    tiers: {
+      basic: { name: 'Basic', monthly: 2999, annual: 2399 },
+      pro: { name: 'Pro', monthly: 4999, annual: 3999 },
+      elite: { name: 'Elite VIP', monthly: 8999, annual: 7199 }
+    }
+  },
+  USD: {
+    symbol: '
+</body>
+</html>
+,
+    tiers: {
+      basic: { name: 'Basic', monthly: 49, annual: 39 },
+      pro: { name: 'Pro', monthly: 89, annual: 69 },
+      elite: { name: 'Elite VIP', monthly: 149, annual: 119 }
+    }
+  }
+};
+
+// --- 4. STATE ---
+let currentDay = 'mon';
+let currentCategory = 'all';
+let billingPeriod = 'monthly'; // 'monthly' | 'annual'
+let currentCurrency = 'INR'; // 'INR' (India Default) | 'USD'
+let calculatorUnits = 'metric'; // 'metric' | 'imperial'
+let bookedClasses = JSON.parse(localStorage.getItem('apex_booked_classes') || '[]');
+
+// Web Audio API Context for workout beeps
+let audioCtx = null;
+function playBeep(frequency = 880, duration = 0.12, type = 'sine') {
+  try {
+    if (!audioCtx) {
+      audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+    }
+    if (audioCtx.state === 'suspended') {
+      audioCtx.resume();
+    }
+    const osc = audioCtx.createOscillator();
+    const gain = audioCtx.createGain();
+    osc.type = type;
+    osc.frequency.setValueAtTime(frequency, audioCtx.currentTime);
+    gain.gain.setValueAtTime(0.15, audioCtx.currentTime);
+    gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + duration);
+    osc.connect(gain);
+    gain.connect(audioCtx.destination);
+    osc.start();
+    osc.stop(audioCtx.currentTime + duration);
+  } catch (e) {
+    console.warn('Audio synthesis not supported or permitted yet', e);
+  }
+}
+
+// --- 4. INITIALIZATION ---
+document.addEventListener('DOMContentLoaded', () => {
+  initSchedule();
+  initTrainers();
+  initCalculator();
+  initPricing();
+  initModal();
+  initFaqAccordion();
+  initMobileNav();
+  initIntervalTimer();
+  initGymCapacity();
+  initSmoothScroll();
+});
+
+// --- 5. SCHEDULE LOGIC ---
+function initSchedule() {
+  const dayButtons = document.querySelectorAll('.day-tab-btn');
+  const catButtons = document.querySelectorAll('.cat-tab-btn');
+
+  dayButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      dayButtons.forEach(b => {
+        b.classList.remove('bg-volt', 'text-black', 'border-volt', 'font-bold');
+        b.classList.add('bg-[#141720]', 'text-gray-400', 'border-[#232936]');
+      });
+      btn.classList.add('bg-volt', 'text-black', 'border-volt', 'font-bold');
+      btn.classList.remove('bg-[#141720]', 'text-gray-400', 'border-[#232936]');
+      currentDay = btn.dataset.day;
+      renderSchedule();
+    });
+  });
+
+  catButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      catButtons.forEach(b => {
+        b.classList.remove('bg-white', 'text-black', 'font-semibold');
+        b.classList.add('text-gray-400', 'hover:text-white');
+      });
+      btn.classList.add('bg-white', 'text-black', 'font-semibold');
+      btn.classList.remove('text-gray-400', 'hover:text-white');
+      currentCategory = btn.dataset.cat;
+      renderSchedule();
+    });
+  });
+
+  renderSchedule();
+}
+
+function renderSchedule() {
+  const container = document.getElementById('schedule-cards-container');
+  if (!container) return;
+
+  const filtered = SCHEDULE_DATA.filter(item => {
+    const dayMatch = item.day === currentDay;
+    const catMatch = currentCategory === 'all' || item.category === currentCategory;
+    return dayMatch && catMatch;
+  });
+
+  if (filtered.length === 0) {
+    container.innerHTML = `
+      <div class="col-span-full py-16 text-center text-gray-500">
+        <svg class="w-12 h-12 mx-auto mb-3 text-gray-600 opacity-60" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <circle cx="12" cy="12" r="10" stroke-width="1.5"></circle>
+          <path d="M12 8v4M12 16h.01" stroke-width="2" stroke-linecap="round"></path>
+        </svg>
+        <p class="text-lg font-medium text-gray-400">No classes found for this category on ${getDayFullName(currentDay)}.</p>
+        <p class="text-sm mt-1">Try selecting "All Categories" or switch to another day.</p>
+      </div>
+    `;
+    return;
+  }
+
+  container.innerHTML = filtered.map(cls => {
+    const isBooked = bookedClasses.includes(cls.id);
+    const spotsRemaining = isBooked ? Math.max(0, cls.spotsLeft - 1) : cls.spotsLeft;
+    const isFull = spotsRemaining <= 0;
+
+    let flames = '';
+    for (let i = 0; i < 5; i++) {
+      flames += `<span class="${i < cls.intensity ? 'text-[#ff4d00]' : 'text-gray-700'}">🔥</span>`;
+    }
+
+    return `
+      <div class="snap-item w-[300px] sm:w-[340px] md:w-auto bg-[#12151b] border border-[#232936] hover:border-[#ccff00]/40 rounded-2xl p-5 flex flex-col justify-between transition-all duration-300 hover:-translate-y-1 hover:shadow-xl group relative overflow-hidden">
+        <div class="absolute -top-12 -right-12 w-28 h-28 bg-[#ccff00]/5 rounded-full blur-2xl pointer-events-none group-hover:bg-[#ccff00]/10 transition-all"></div>
+        
+        <div>
+          <!-- Top Row: Time & Category Badge -->
+          <div class="flex items-center justify-between gap-2 mb-3">
+            <span class="text-xs font-semibold px-2.5 py-1 rounded-md bg-[#1b202a] text-[#ccff00] border border-[#ccff00]/20 uppercase tracking-wider">
+              ${cls.category}
+            </span>
+            <div class="flex items-center gap-1 text-xs" title="Intensity ${cls.intensity}/5">
+              ${flames}
+            </div>
+          </div>
+
+          <!-- Class Title -->
+          <h3 class="text-xl font-bold font-accent text-white group-hover:text-[#ccff00] transition-colors leading-tight mb-1">
+            ${cls.title}
+          </h3>
+
+          <p class="text-xs text-gray-400 mb-4 flex items-center gap-1.5">
+            <svg class="w-3.5 h-3.5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+            ${cls.time} <span class="text-gray-600">•</span> ${cls.duration}
+          </p>
+
+          <!-- Studio & Coach -->
+          <div class="space-y-2 border-t border-[#1c222c] pt-3 text-xs text-gray-300">
+            <div class="flex items-center justify-between">
+              <span class="text-gray-500">Coach:</span>
+              <span class="font-medium text-white">${cls.instructor}</span>
+            </div>
+            <div class="flex items-center justify-between">
+              <span class="text-gray-500">Studio:</span>
+              <span class="font-medium text-gray-300">${cls.studio}</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Footer / Booking CTA -->
+        <div class="mt-5 pt-3 border-t border-[#1c222c] flex items-center justify-between gap-3">
+          <div class="text-xs">
+            ${isFull ? `
+              <span class="text-red-400 font-bold uppercase tracking-wide">Class Full</span>
+            ` : `
+              <span class="text-gray-400">Spots Left:</span> 
+              <span class="font-bold ${spotsRemaining <= 3 ? 'text-[#ff4d00]' : 'text-[#ccff00]'}">${spotsRemaining}</span>
+            `}
+          </div>
+
+          <button 
+            onclick="handleBookClass('${cls.id}', '${cls.title}', '${cls.time}', '${cls.day}')"
+            ${isFull && !isBooked ? 'disabled' : ''}
+            class="touch-btn px-4 py-2 text-xs font-bold rounded-lg transition-all flex items-center gap-1.5 ${
+              isBooked 
+                ? 'bg-emerald-500/20 text-emerald-400 border border-emerald-500/40' 
+                : isFull 
+                  ? 'bg-gray-800 text-gray-500 cursor-not-allowed' 
+                  : 'bg-[#ccff00] text-black hover:bg-[#b8e600] volt-glow'
+            }"
+          >
+            ${isBooked ? `
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path>
+              </svg>
+              Reserved
+            ` : isFull ? 'Waitlist' : 'Book Spot'}
+          </button>
+        </div>
+      </div>
+    `;
+  }).join('');
+}
+
+function getDayFullName(dayCode) {
+  const map = {
+    mon: 'Monday', tue: 'Tuesday', wed: 'Wednesday', thu: 'Thursday',
+    fri: 'Friday', sat: 'Saturday', sun: 'Sunday'
+  };
+  return map[dayCode] || 'Day';
+}
+
+window.handleBookClass = function(classId, title, time, day) {
+  if (bookedClasses.includes(classId)) {
+    showToast(`You have already reserved your spot in "${title}".`, 'info');
+    return;
+  }
+  openModal('class', {
+    classId: classId,
+    title: title,
+    time: `${getDayFullName(day)} @ ${time}`
+  });
+};
+
+// --- 6. TRAINER SHOWCASE ---
+function initTrainers() {
+  const container = document.getElementById('trainers-deck');
+  if (!container) return;
+
+  container.innerHTML = TRAINERS_DATA.map(t => {
+    return `
+      <div class="snap-item w-[280px] sm:w-[320px] md:w-auto bg-[#12151b] border border-[#232936] hover:border-[#ccff00]/40 rounded-2xl overflow-hidden flex flex-col group transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
+        <div class="relative h-72 w-full overflow-hidden bg-gray-900">
+          <img 
+            src="${t.image}" 
+            alt="${t.name}" 
+            loading="lazy" 
+            class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500 grayscale contrast-125 group-hover:grayscale-0"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-[#12151b] via-[#12151b]/40 to-transparent"></div>
+          
+          <div class="absolute bottom-3 left-4 right-4">
+            <span class="inline-block text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-[#ccff00] text-black mb-1">
+              ${t.tag}
+            </span>
+            <h4 class="text-xl font-bold font-accent text-white">${t.name}</h4>
+            <p class="text-xs text-gray-300 font-medium">${t.nickname}</p>
+          </div>
+        </div>
+
+        <div class="p-5 flex-1 flex flex-col justify-between">
+          <div>
+            <p class="text-xs font-semibold text-[#ccff00] mb-2">${t.role}</p>
+            <p class="text-xs text-gray-400 leading-relaxed mb-4">${t.bio}</p>
+            
+            <div class="bg-[#181c25] rounded-xl p-3 border border-[#232936] mb-4">
+              <span class="text-[10px] text-gray-500 uppercase tracking-wider block mb-1">Specialization</span>
+              <p class="text-xs text-gray-200 font-medium">${t.specialty}</p>
+            </div>
+          </div>
+
+          <div class="flex items-center justify-between gap-3 pt-3 border-t border-[#1c222c]">
+            <span class="text-xs text-gray-500">${t.instagram}</span>
+            <button 
+              onclick="handleBookTrainer('${t.name}', '${t.role}')" 
+              class="touch-btn px-3 py-1.5 rounded-lg text-xs font-bold bg-[#1e2430] hover:bg-[#ccff00] hover:text-black text-gray-200 transition-colors"
+            >
+              Consult Coach
+            </button>
+          </div>
+        </div>
+      </div>
+    `;
+  }).join('');
+}
+
+window.handleBookTrainer = function(name, role) {
+  openModal('consult', {
+    trainerName: name,
+    trainerRole: role
+  });
+};
+
+// --- 7. CALORIE & MACRO CALCULATOR ---
+function initCalculator() {
+  const form = document.getElementById('macro-calc-form');
+  if (!form) return;
+
+  const weightSlider = document.getElementById('calc-weight');
+  const heightSlider = document.getElementById('calc-height');
+  const ageSlider = document.getElementById('calc-age');
+  
+  const weightVal = document.getElementById('weight-display-val');
+  const heightVal = document.getElementById('height-display-val');
+  const ageVal = document.getElementById('age-display-val');
+
+  const unitToggles = document.querySelectorAll('.unit-toggle-btn');
+  const goalRadios = document.querySelectorAll('input[name="calc-goal"]');
+  const activityRadios = document.querySelectorAll('input[name="calc-activity"]');
+  const genderRadios = document.querySelectorAll('input[name="calc-gender"]');
+
+  // Sliders input sync
+  weightSlider.addEventListener('input', () => {
+    weightVal.textContent = `${weightSlider.value} ${calculatorUnits === 'metric' ? 'kg' : 'lbs'}`;
+    calculateMacros();
+  });
+
+  heightSlider.addEventListener('input', () => {
+    if (calculatorUnits === 'metric') {
+      heightVal.textContent = `${heightSlider.value} cm`;
+    } else {
+      const totalInches = parseInt(heightSlider.value, 10);
+      const feet = Math.floor(totalInches / 12);
+      const inches = totalInches % 12;
+      heightVal.textContent = `${feet}'${inches}"`;
+    }
+    calculateMacros();
+  });
+
+  ageSlider.addEventListener('input', () => {
+    ageVal.textContent = `${ageSlider.value} yrs`;
+    calculateMacros();
+  });
+
+  unitToggles.forEach(btn => {
+    btn.addEventListener('click', () => {
+      unitToggles.forEach(b => {
+        b.classList.remove('bg-volt', 'text-black', 'font-bold');
+        b.classList.add('bg-[#141720]', 'text-gray-400');
+      });
+      btn.classList.add('bg-volt', 'text-black', 'font-bold');
+      btn.classList.remove('bg-[#141720]', 'text-gray-400');
+      
+      const newUnit = btn.dataset.unit;
+      if (newUnit !== calculatorUnits) {
+        calculatorUnits = newUnit;
+        updateSliderUnits();
+        calculateMacros();
+      }
+    });
+  });
+
+  [...goalRadios, ...activityRadios, ...genderRadios].forEach(input => {
+    input.addEventListener('change', calculateMacros);
+  });
+
+  document.getElementById('save-nutrition-btn')?.addEventListener('click', () => {
+    playBeep(920, 0.15);
+    showToast('Targets saved! Nutrition protocol emailed to your member profile.', 'success');
+  });
+
+  calculateMacros();
+}
+
+function updateSliderUnits() {
+  const weightSlider = document.getElementById('calc-weight');
+  const heightSlider = document.getElementById('calc-height');
+  const weightVal = document.getElementById('weight-display-val');
+  const heightVal = document.getElementById('height-display-val');
+
+  if (calculatorUnits === 'metric') {
+    weightSlider.min = 45;
+    weightSlider.max = 160;
+    weightSlider.value = Math.round(weightSlider.value * 0.453592) || 78;
+    weightVal.textContent = `${weightSlider.value} kg`;
+
+    heightSlider.min = 140;
+    heightSlider.max = 215;
+    heightSlider.value = Math.round(heightSlider.value * 2.54) || 178;
+    heightVal.textContent = `${heightSlider.value} cm`;
+  } else {
+    weightSlider.min = 100;
+    weightSlider.max = 350;
+    weightSlider.value = Math.round(weightSlider.value / 0.453592) || 172;
+    weightVal.textContent = `${weightSlider.value} lbs`;
+
+    heightSlider.min = 55; // 4'7"
+    heightSlider.max = 84; // 7'0"
+    heightSlider.value = Math.round(heightSlider.value / 2.54) || 70;
+    const feet = Math.floor(heightSlider.value / 12);
+    const inches = heightSlider.value % 12;
+    heightVal.textContent = `${feet}'${inches}"`;
+  }
+}
+
+function calculateMacros() {
+  const weightSlider = document.getElementById('calc-weight');
+  const heightSlider = document.getElementById('calc-height');
+  const ageSlider = document.getElementById('calc-age');
+  if (!weightSlider) return;
+
+  let weightKg = parseFloat(weightSlider.value);
+  let heightCm = parseFloat(heightSlider.value);
+  const age = parseFloat(ageSlider.value);
+
+  if (calculatorUnits === 'imperial') {
+    weightKg = weightKg * 0.453592;
+    heightCm = heightCm * 2.54;
+  }
+
+  const gender = document.querySelector('input[name="calc-gender"]:checked')?.value || 'male';
+  const goal = document.querySelector('input[name="calc-goal"]:checked')?.value || 'maintenance';
+  const activityMult = parseFloat(document.querySelector('input[name="calc-activity"]:checked')?.value || '1.55');
+
+  // Mifflin - St Jeor BMR formula
+  let bmr = (10 * weightKg) + (6.25 * heightCm) - (5 * age);
+  if (gender === 'male') {
+    bmr += 5;
+  } else {
+    bmr -= 161;
+  }
+
+  // TDEE
+  const tdee = bmr * activityMult;
+
+  // Calorie adjustments based on goal
+  let targetCalories = tdee;
+  let proteinRatio = 2.0; // g per kg of bodyweight
+  let fatRatio = 0.85;
+
+  if (goal === 'fatloss') {
+    targetCalories = tdee * 0.80; // 20% deficit
+    proteinRatio = 2.2; // higher protein to preserve lean muscle
+    fatRatio = 0.75;
+  } else if (goal === 'bulk') {
+    targetCalories = tdee * 1.15; // 15% surplus
+    proteinRatio = 2.0;
+    fatRatio = 0.95;
+  }
+
+  targetCalories = Math.round(targetCalories);
+
+  // Macro grams
+  const proteinGrams = Math.round(weightKg * proteinRatio);
+  const fatGrams = Math.round(weightKg * fatRatio);
+  
+  const proteinKcal = proteinGrams * 4;
+  const fatKcal = fatGrams * 9;
+  const carbKcal = Math.max(0, targetCalories - (proteinKcal + fatKcal));
+  const carbGrams = Math.round(carbKcal / 4);
+
+  // Water intake guideline (liters): ~35ml per kg + 0.5L for activity
+  const waterLiters = ((weightKg * 35) / 1000 + 0.6).toFixed(1);
+
+  // Update UI Elements
+  animateCounter('calories-target-display', targetCalories);
+  
+  document.getElementById('protein-grams-display').textContent = `${proteinGrams}g`;
+  document.getElementById('carbs-grams-display').textContent = `${carbGrams}g`;
+  document.getElementById('fats-grams-display').textContent = `${fatGrams}g`;
+  document.getElementById('water-liters-display').textContent = `${waterLiters}L`;
+
+  // Macro % of total calories
+  const totalKcal = proteinKcal + fatKcal + carbKcal;
+  const pPct = Math.round((proteinKcal / totalKcal) * 100) || 30;
+  const cPct = Math.round((carbKcal / totalKcal) * 100) || 45;
+  const fPct = Math.round((fatKcal / totalKcal) * 100) || 25;
+
+  document.getElementById('protein-pct-display').textContent = `${pPct}%`;
+  document.getElementById('carbs-pct-display').textContent = `${cPct}%`;
+  document.getElementById('fats-pct-display').textContent = `${fPct}%`;
+
+  // Progress Bars
+  const pBar = document.getElementById('protein-bar');
+  const cBar = document.getElementById('carbs-bar');
+  const fBar = document.getElementById('fats-bar');
+
+  if (pBar) pBar.style.width = `${pPct}%`;
+  if (cBar) cBar.style.width = `${cPct}%`;
+  if (fBar) fBar.style.width = `${fPct}%`;
+}
+
+function animateCounter(elementId, targetValue) {
+  const el = document.getElementById(elementId);
+  if (!el) return;
+  const current = parseInt(el.textContent.replace(/,/g, ''), 10) || 0;
+  const diff = targetValue - current;
+  const steps = 10;
+  let step = 0;
+
+  const timer = setInterval(() => {
+    step++;
+    const val = Math.round(current + (diff * (step / steps)));
+    el.textContent = val.toLocaleString();
+    if (step >= steps) {
+      el.textContent = targetValue.toLocaleString();
+      clearInterval(timer);
+    }
+  }, 20);
+}
+
+// --- 8. MEMBERSHIP PRICING ---
+function initPricing() {
+  const billingToggle = document.getElementById('billing-cycle-toggle');
+  if (billingToggle) {
+    billingToggle.addEventListener('change', (e) => {
+      billingPeriod = e.target.checked ? 'annual' : 'monthly';
+      updatePricingUI();
+    });
+  }
+
+  updatePricingUI();
+}
+
+function setCurrency(curr) {
+  if (PRICING_DATA[curr]) {
+    currentCurrency = curr;
+    const inrBtn = document.getElementById('curr-inr-btn');
+    const usdBtn = document.getElementById('curr-usd-btn');
+    if (inrBtn && usdBtn) {
+      if (curr === 'INR') {
+        inrBtn.className = 'currency-toggle-btn px-4 py-1.5 rounded-xl text-xs font-bold bg-[#ccff00] text-black border border-[#ccff00] transition-all shadow-md';
+        usdBtn.className = 'currency-toggle-btn px-4 py-1.5 rounded-xl text-xs font-bold bg-[#141720] text-gray-400 border border-[#232936] hover:text-white transition-all';
+      } else {
+        usdBtn.className = 'currency-toggle-btn px-4 py-1.5 rounded-xl text-xs font-bold bg-[#ccff00] text-black border border-[#ccff00] transition-all shadow-md';
+        inrBtn.className = 'currency-toggle-btn px-4 py-1.5 rounded-xl text-xs font-bold bg-[#141720] text-gray-400 border border-[#232936] hover:text-white transition-all';
+      }
+    }
+    updatePricingUI();
+  }
+}
+window.setCurrency = setCurrency;
+
+function updatePricingUI() {
+  const isAnnual = billingPeriod === 'annual';
+  const currData = PRICING_DATA[currentCurrency];
+  const sym = currData.symbol;
+
+  const basicPrice = document.getElementById('price-basic');
+  const elitePrice = document.getElementById('price-elite');
+  const vipPrice = document.getElementById('price-vip');
+
+  const basicPeriod = document.getElementById('period-basic');
+  const elitePeriod = document.getElementById('period-elite');
+  const vipPeriod = document.getElementById('period-vip');
+
+  const discountBadge = document.getElementById('annual-savings-badge');
+
+  const pBasic = isAnnual ? currData.tiers.basic.annual : currData.tiers.basic.monthly;
+  const pPro = isAnnual ? currData.tiers.pro.annual : currData.tiers.pro.monthly;
+  const pVip = isAnnual ? currData.tiers.elite.annual : currData.tiers.elite.monthly;
+
+  if (basicPrice) basicPrice.textContent = `${sym}${pBasic.toLocaleString()}`;
+  if (elitePrice) elitePrice.textContent = `${sym}${pPro.toLocaleString()}`;
+  if (vipPrice) vipPrice.textContent = `${sym}${pVip.toLocaleString()}`;
+
+  if (isAnnual) {
+    if (discountBadge) discountBadge.classList.add('scale-105', 'bg-[#ccff00]', 'text-black');
+  } else {
+    if (discountBadge) discountBadge.classList.remove('scale-105', 'bg-[#ccff00]', 'text-black');
+  }
+
+  const periodText = isAnnual ? '/month (billed annually)' : '/month';
+  if (basicPeriod) basicPeriod.textContent = periodText;
+  if (elitePeriod) elitePeriod.textContent = periodText;
+  if (vipPeriod) vipPeriod.textContent = periodText;
+}
+
+window.handleSelectCurrentPlan = function(planKeyOrName) {
+  let key = 'pro';
+  if (/basic/i.test(planKeyOrName)) key = 'basic';
+  else if (/vip|elite\s*vip/i.test(planKeyOrName)) key = 'elite';
+  else if (/pro|elite/i.test(planKeyOrName)) key = 'pro';
+
+  const planInfo = PRICING_DATA[currentCurrency].tiers[key];
+  const price = billingPeriod === 'annual' ? planInfo.annual : planInfo.monthly;
+  const symbol = PRICING_DATA[currentCurrency].symbol;
+
+  openModal('membership', {
+    plan: planInfo.name,
+    price: `${symbol}${price.toLocaleString()}`,
+    cycle: billingPeriod === 'annual' ? 'Annual Membership (Save 20%)' : 'Monthly Membership'
+  });
+};
+
+window.handleSelectPlan = function(planName, priceMonthly, priceAnnual) {
+  window.handleSelectCurrentPlan(planName);
+};
+
+// --- 9. MODAL & LEAD CAPTURE ---
+let currentModalTab = 'pass'; // 'pass' | 'class' | 'membership' | 'consult'
+
+function initModal() {
+  const backdrop = document.getElementById('action-modal-backdrop');
+  const closeBtn = document.getElementById('modal-close-btn');
+  const modalForm = document.getElementById('apex-lead-form');
+
+  if (!backdrop) return;
+
+  // Open triggers
+  document.querySelectorAll('[data-open-modal]').forEach(trigger => {
+    trigger.addEventListener('click', (e) => {
+      const mode = trigger.dataset.openModal || 'pass';
+      openModal(mode);
+    });
+  });
+
+  // Close triggers
+  closeBtn?.addEventListener('click', closeModal);
+  backdrop.addEventListener('click', (e) => {
+    if (e.target === backdrop) closeModal();
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && backdrop.classList.contains('active')) {
+      closeModal();
+    }
+  });
+
+  // Modal Form Submission
+  modalForm?.addEventListener('submit', (e) => {
+    e.preventDefault();
+    submitModalForm();
+  });
+}
+
+function openModal(mode = 'pass', context = {}) {
+  const backdrop = document.getElementById('action-modal-backdrop');
+  if (!backdrop) return;
+
+  currentModalTab = mode;
+  const modalTitle = document.getElementById('modal-title');
+  const modalSubtitle = document.getElementById('modal-subtitle');
+  const contextBadge = document.getElementById('modal-context-badge');
+  const contextDetails = document.getElementById('modal-context-details');
+
+  const formSection = document.getElementById('modal-form-view');
+  const successSection = document.getElementById('modal-success-view');
+
+  formSection.classList.remove('hidden');
+  successSection.classList.add('hidden');
+
+  if (mode === 'pass') {
+    modalTitle.textContent = 'CLAIM 3-DAY VIP ACCESS PASS';
+    modalSubtitle.textContent = 'Experience our Olympic lifting racks, recovery suites, and high-energy classes on us.';
+    contextBadge.innerHTML = '⚡ 100% Free • Zero Credit Card Required';
+    contextDetails.classList.add('hidden');
+  } else if (mode === 'class') {
+    modalTitle.textContent = 'RESERVE CLASS SPOT';
+    modalSubtitle.textContent = 'Guarantee your training slot with coach supervision & locker access.';
+    contextBadge.innerHTML = `🎯 Class: <span class="text-[#ccff00]">${context.title || 'Selected Session'}</span>`;
+    contextDetails.classList.remove('hidden');
+    contextDetails.innerHTML = `
+      <div class="bg-[#181c25] rounded-xl p-3 border border-[#232936] text-xs text-gray-300 flex items-center justify-between">
+        <div>
+          <span class="text-gray-400 block text-[10px] uppercase">Session Scheduled</span>
+          <span class="font-bold text-white">${context.time || 'Upcoming'}</span>
+        </div>
+        <span class="px-2 py-1 rounded bg-[#ccff00]/10 text-[#ccff00] font-semibold text-[11px]">Instant Confirmation</span>
+      </div>
+    `;
+    // store active booking class id
+    if (context.classId) {
+      document.getElementById('hidden-class-id').value = context.classId;
+    }
+  } else if (mode === 'membership') {
+    modalTitle.textContent = `JOIN AS ${context.plan || 'ELITE ATHLETE'}`;
+    modalSubtitle.textContent = 'Lock in locked-rate membership pricing and zero initiation fee.';
+    contextBadge.innerHTML = `💎 Selected Plan: <span class="text-[#ccff00]">${context.plan}</span>`;
+    contextDetails.classList.remove('hidden');
+    contextDetails.innerHTML = `
+      <div class="bg-[#181c25] rounded-xl p-3 border border-[#232936] text-xs text-gray-300 flex items-center justify-between">
+        <div>
+          <span class="text-gray-400 block text-[10px] uppercase">${context.cycle || 'Monthly Membership'}</span>
+          <span class="text-lg font-bold text-white">${context.price || '$89'}/mo</span>
+        </div>
+        <span class="px-2.5 py-1 rounded bg-[#ccff00] text-black font-bold text-xs">$0 Startup Fee</span>
+      </div>
+    `;
+  } else if (mode === 'consult') {
+    modalTitle.textContent = `COACH CONSULTATION`;
+    modalSubtitle.textContent = `Schedule a 1-on-1 strategy session with ${context.trainerName || 'our Head Coach'}.`;
+    contextBadge.innerHTML = `🏋️ Trainer: <span class="text-[#ccff00]">${context.trainerName}</span>`;
+    contextDetails.classList.remove('hidden');
+    contextDetails.innerHTML = `
+      <div class="bg-[#181c25] rounded-xl p-3 border border-[#232936] text-xs text-gray-300">
+        <span class="text-gray-400 block text-[10px] uppercase">Specialty Focus</span>
+        <span class="font-semibold text-white">${context.trainerRole || 'Strength Coach'}</span>
+      </div>
+    `;
+  }
+
+  backdrop.classList.add('active');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeModal() {
+  const backdrop = document.getElementById('action-modal-backdrop');
+  if (!backdrop) return;
+  backdrop.classList.remove('active');
+  document.body.style.overflow = '';
+}
+
+function submitModalForm() {
+  const nameInput = document.getElementById('modal-input-name');
+  const emailInput = document.getElementById('modal-input-email');
+  const phoneInput = document.getElementById('modal-input-phone');
+  const classIdInput = document.getElementById('hidden-class-id');
+
+  const name = nameInput.value.trim();
+  const email = emailInput.value.trim();
+  const phone = phoneInput.value.trim();
+
+  // Basic validation
+  if (!name || !email || !phone) {
+    showToast('Please fill in all required fields.', 'error');
+    return;
+  }
+
+  if (!email.includes('@') || !email.includes('.')) {
+    showToast('Please enter a valid email address.', 'error');
+    return;
+  }
+
+  // Generate Voucher / Pass Code
+  const randomPassCode = `APEX-${Math.floor(1000 + Math.random() * 9000)}`;
+
+  // If booking class, persist to state
+  if (currentModalTab === 'class' && classIdInput.value) {
+    if (!bookedClasses.includes(classIdInput.value)) {
+      bookedClasses.push(classIdInput.value);
+      localStorage.setItem('apex_booked_classes', JSON.stringify(bookedClasses));
+      renderSchedule();
+    }
+  }
+
+  // Play audio affirmation
+  playBeep(1046, 0.2, 'triangle');
+
+  // Switch to success view
+  const formSection = document.getElementById('modal-form-view');
+  const successSection = document.getElementById('modal-success-view');
+  
+  formSection.classList.add('hidden');
+  successSection.classList.remove('hidden');
+
+  document.getElementById('pass-code-display').textContent = randomPassCode;
+  document.getElementById('success-user-name').textContent = name;
+  document.getElementById('success-user-email').textContent = email;
+
+  showToast('Booking successfully confirmed! Welcome to Apex Performance.', 'success');
+}
+
+// --- 10. FAQ ACCORDION ---
+function initFaqAccordion() {
+  const accordions = document.querySelectorAll('.faq-item-trigger');
+
+  accordions.forEach(trigger => {
+    trigger.addEventListener('click', () => {
+      const isExpanded = trigger.getAttribute('aria-expanded') === 'true';
+      const panel = trigger.nextElementSibling;
+      const chevron = trigger.querySelector('.faq-chevron');
+
+      // Close all other panels for clean accordion behavior
+      accordions.forEach(other => {
+        if (other !== trigger) {
+          other.setAttribute('aria-expanded', 'false');
+          other.nextElementSibling.style.maxHeight = null;
+          const otherChev = other.querySelector('.faq-chevron');
+          if (otherChev) otherChev.style.transform = 'rotate(0deg)';
+        }
+      });
+
+      if (!isExpanded) {
+        trigger.setAttribute('aria-expanded', 'true');
+        panel.style.maxHeight = panel.scrollHeight + 'px';
+        if (chevron) chevron.style.transform = 'rotate(180deg)';
+      } else {
+        trigger.setAttribute('aria-expanded', 'false');
+        panel.style.maxHeight = null;
+        if (chevron) chevron.style.transform = 'rotate(0deg)';
+      }
+    });
+  });
+}
+
+// --- 11. INTERVAL WORKOUT TIMER (ATHLETIC FEATURE) ---
+let timerInterval = null;
+let timerRunning = false;
+let currentTimerMode = 'tabata'; // 'tabata' | 'hiit' | 'custom'
+let currentRound = 1;
+let totalRounds = 8;
+let isWorkPhase = true;
+let timeLeft = 20;
+let workDuration = 20;
+let restDuration = 10;
+
+function initIntervalTimer() {
+  const toggleBtn = document.getElementById('timer-toggle-btn');
+  const resetBtn = document.getElementById('timer-reset-btn');
+  const modePills = document.querySelectorAll('.timer-mode-btn');
+
+  if (!toggleBtn) return;
+
+  modePills.forEach(pill => {
+    pill.addEventListener('click', () => {
+      if (timerRunning) pauseTimer();
+      modePills.forEach(p => {
+        p.classList.remove('bg-volt', 'text-black', 'font-bold');
+        p.classList.add('bg-[#1a1f29]', 'text-gray-400');
+      });
+      pill.classList.add('bg-volt', 'text-black', 'font-bold');
+      pill.classList.remove('bg-[#1a1f29]', 'text-gray-400');
+
+      currentTimerMode = pill.dataset.mode;
+      setupTimerMode(currentTimerMode);
+    });
+  });
+
+  toggleBtn.addEventListener('click', () => {
+    if (timerRunning) {
+      pauseTimer();
+    } else {
+      startTimer();
+    }
+  });
+
+  resetBtn?.addEventListener('click', () => {
+    resetTimer();
+  });
+
+  setupTimerMode('tabata');
+}
+
+function setupTimerMode(mode) {
+  if (mode === 'tabata') {
+    workDuration = 20;
+    restDuration = 10;
+    totalRounds = 8;
+  } else if (mode === 'hiit') {
+    workDuration = 40;
+    restDuration = 20;
+    totalRounds = 5;
+  } else if (mode === 'emom') {
+    workDuration = 50;
+    restDuration = 10;
+    totalRounds = 10;
+  }
+  resetTimer();
+}
+
+function startTimer() {
+  timerRunning = true;
+  playBeep(800, 0.15);
+  const toggleBtn = document.getElementById('timer-toggle-btn');
+  if (toggleBtn) {
+    toggleBtn.innerHTML = `
+      <svg class="w-4 h-4 mr-1 inline" fill="currentColor" viewBox="0 0 24 24"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+      Pause
+    `;
+    toggleBtn.classList.remove('bg-[#ccff00]', 'text-black');
+    toggleBtn.classList.add('bg-amber-400', 'text-black');
+  }
+
+  timerInterval = setInterval(() => {
+    timeLeft--;
+
+    // Beep on countdown last 3 seconds
+    if (timeLeft >= 1 && timeLeft <= 3) {
+      playBeep(660, 0.1);
+    }
+
+    if (timeLeft < 0) {
+      // Phase switch
+      if (isWorkPhase) {
+        // Switch to Rest
+        playBeep(440, 0.35, 'sawtooth');
+        isWorkPhase = false;
+        timeLeft = restDuration;
+      } else {
+        // Switch to next Work round
+        currentRound++;
+        if (currentRound > totalRounds) {
+          // Completed
+          finishWorkout();
+          return;
+        }
+        playBeep(987, 0.35, 'sine');
+        isWorkPhase = true;
+        timeLeft = workDuration;
+      }
+    }
+    updateTimerDisplay();
+  }, 1000);
+}
+
+function pauseTimer() {
+  timerRunning = false;
+  clearInterval(timerInterval);
+  const toggleBtn = document.getElementById('timer-toggle-btn');
+  if (toggleBtn) {
+    toggleBtn.innerHTML = `
+      <svg class="w-4 h-4 mr-1 inline" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+      Resume
+    `;
+    toggleBtn.classList.add('bg-[#ccff00]', 'text-black');
+    toggleBtn.classList.remove('bg-amber-400');
+  }
+}
+
+function resetTimer() {
+  pauseTimer();
+  currentRound = 1;
+  isWorkPhase = true;
+  timeLeft = workDuration;
+  const toggleBtn = document.getElementById('timer-toggle-btn');
+  if (toggleBtn) {
+    toggleBtn.innerHTML = `
+      <svg class="w-4 h-4 mr-1 inline" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+      Start Interval
+    `;
+  }
+  updateTimerDisplay();
+}
+
+function finishWorkout() {
+  pauseTimer();
+  playBeep(1200, 0.5, 'square');
+  showToast('⚡ Interval Workout Completed! Outstanding effort.', 'success');
+  resetTimer();
+}
+
+function updateTimerDisplay() {
+  const timeDisplay = document.getElementById('timer-time-display');
+  const phaseDisplay = document.getElementById('timer-phase-display');
+  const roundDisplay = document.getElementById('timer-round-display');
+
+  if (timeDisplay) {
+    const mins = Math.floor(timeLeft / 60);
+    const secs = timeLeft % 60;
+    timeDisplay.textContent = `${String(mins).padStart(2, '0')}:${String(secs).padStart(2, '0')}`;
+  }
+
+  if (phaseDisplay) {
+    phaseDisplay.textContent = isWorkPhase ? 'WORK PHASE 🔥' : 'REST & BREATHE 🧊';
+    phaseDisplay.className = `text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full ${
+      isWorkPhase 
+        ? 'bg-[#ff4d00]/20 text-[#ff4d00] border border-[#ff4d00]/30' 
+        : 'bg-cyan-500/20 text-cyan-300 border border-cyan-500/30'
+    }`;
+  }
+
+  if (roundDisplay) {
+    roundDisplay.textContent = `Round ${currentRound} of ${totalRounds}`;
+  }
+}
+
+// --- 12. GYM CAPACITY LIVE SIMULATION ---
+function initGymCapacity() {
+  const capacityBar = document.getElementById('live-capacity-bar');
+  const capacityPct = document.getElementById('live-capacity-pct');
+  const capacityText = document.getElementById('live-capacity-text');
+
+  if (!capacityBar) return;
+
+  function updateCapacity() {
+    // Generate realistic gym capacity between 38% and 65%
+    const hour = new Date().getHours();
+    let base = 42;
+    if (hour >= 6 && hour <= 9) base = 68; // morning rush
+    else if (hour >= 17 && hour <= 20) base = 78; // evening peak
+    else if (hour >= 23 || hour <= 4) base = 18; // late night
+
+    const variation = Math.floor(Math.random() * 8) - 4;
+    const finalPct = Math.min(95, Math.max(15, base + variation));
+
+    capacityBar.style.width = `${finalPct}%`;
+    if (capacityPct) capacityPct.textContent = `${finalPct}%`;
+    
+    if (capacityText) {
+      if (finalPct > 70) {
+        capacityText.textContent = 'High Floor Energy';
+        capacityBar.className = 'capacity-fill h-full bg-[#ff4d00]';
+      } else if (finalPct > 45) {
+        capacityText.textContent = 'Moderate Floor Flow';
+        capacityBar.className = 'capacity-fill h-full bg-[#ccff00]';
+      } else {
+        capacityText.textContent = 'Open Platforms Available';
+        capacityBar.className = 'capacity-fill h-full bg-emerald-400';
+      }
+    }
+  }
+
+  updateCapacity();
+  setInterval(updateCapacity, 25000);
+}
+
+// --- 13. MOBILE BOTTOM NAVIGATION & SCROLL TRACKING ---
+function initMobileNav() {
+  const navItems = document.querySelectorAll('.mobile-nav-item');
+  const sections = ['hero', 'classes', 'trainers', 'calculator', 'pricing'];
+
+  // Scrollspy via IntersectionObserver
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const id = entry.target.id;
+        navItems.forEach(item => {
+          if (item.dataset.section === id) {
+            item.classList.add('text-[#ccff00]');
+            item.classList.remove('text-gray-400');
+          } else {
+            item.classList.remove('text-[#ccff00]');
+            item.classList.add('text-gray-400');
+          }
+        });
+      }
+    });
+  }, {
+    threshold: 0.25,
+    rootMargin: '-50px 0px -50px 0px'
+  });
+
+  sections.forEach(secId => {
+    const el = document.getElementById(secId);
+    if (el) observer.observe(el);
+  });
+}
+
+// --- 14. SMOOTH SCROLLING ---
+function initSmoothScroll() {
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      const targetId = this.getAttribute('href');
+      if (targetId === '#' || targetId === '') return;
+      const target = document.querySelector(targetId);
+      if (target) {
+        e.preventDefault();
+        target.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
+      }
+    });
+  });
+}
+
+// --- 15. TOAST SYSTEM ---
+function showToast(message, type = 'info') {
+  const container = document.getElementById('toast-container');
+  if (!container) return;
+
+  const toast = document.createElement('div');
+  const typeStyles = {
+    success: 'bg-[#151921] border-[#ccff00] text-white',
+    error: 'bg-[#151921] border-[#ff4d00] text-white',
+    info: 'bg-[#151921] border-cyan-400 text-white'
+  };
+
+  const icons = {
+    success: `<svg class="w-5 h-5 text-[#ccff00] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>`,
+    error: `<svg class="w-5 h-5 text-[#ff4d00] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>`,
+    info: `<svg class="w-5 h-5 text-cyan-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke-width="2"/><path stroke-linecap="round" d="M12 16v-4M12 8h.01"/></svg>`
+  };
+
+  toast.className = `flex items-center gap-3 p-4 rounded-xl border shadow-2xl transition-all duration-300 transform translate-y-3 opacity-0 pointer-events-auto ${typeStyles[type] || typeStyles.info}`;
+  toast.innerHTML = `
+    ${icons[type] || icons.info}
+    <p class="text-xs font-semibold leading-relaxed">${message}</p>
+  `;
+
+  container.appendChild(toast);
+
+  // Trigger animation
+  requestAnimationFrame(() => {
+    toast.classList.remove('translate-y-3', 'opacity-0');
+  });
+
+  setTimeout(() => {
+    toast.classList.add('translate-y-3', 'opacity-0');
+    setTimeout(() => toast.remove(), 300);
+  }, 4000);
+}
+
+// Global window mappings for HTML onclick handlers
+window.openModal = openModal;
+window.closeModal = closeModal;
+window.showToast = showToast;
+window.calculateMacros = calculateMacros;
+
+
+</script>
+</body>
+</html>
